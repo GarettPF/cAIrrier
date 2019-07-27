@@ -1,5 +1,12 @@
+/* Navigation bar */
 div.nav-wrapper {
     background-color: rgb(40, 154, 207);
+}
+
+div#navbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 div.nav-wrapper a.title {
@@ -22,4 +29,27 @@ div.nav-wrapper a.title strong {
 
 .c_container {
     width:500px;
+/* Navigation bar */
+
+
+/* Top */
+div.parallax-container {
+    height: calc(100vh - 64px);
+}
+
+div.parallax-container h1.title {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    font-size: 12rem;
+    font-weight: bolder;
+    color: black;
+}
+
+div.parallax-container p.subtext {
+    position: absolute;
+    top: 58%;
+    left: 40%;
+    color: black;
 }
