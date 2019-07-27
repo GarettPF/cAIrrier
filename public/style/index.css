@@ -2,9 +2,14 @@ div.nav-wrapper {
     background-color: rgb(40, 154, 207);
 }
 
-div.nav-wrapper .title {
-    height: 100%; 
+div.nav-wrapper a.title {
     font-size: 3rem; 
     padding-left: 8vw; 
+    font-weight: bolder;
+}
+
+div.nav-wrapper a.title strong {
+    color: hsl(263, 98%, 49%);
+    font-size: 4rem;
     font-weight: bolder;
 }
