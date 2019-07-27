@@ -1,0 +1,10 @@
+div.nav-wrapper {
+    background-color: rgb(40, 154, 207);
+}
+
+div.nav-wrapper .title {
+    height: 100%; 
+    font-size: 3rem; 
+    padding-left: 8vw; 
+    font-weight: bolder;
+}
