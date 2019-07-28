@@ -1,106 +1,57 @@
-/* Navigation bar */
-div.nav-wrapper {
-    background-color: rgb(40, 154, 207);
+nav ul a,
+nav .brand-logo {
+  color: #444;
 }
 
-div#navbar {
-    position: sticky;
-    top: 0;
-    z-index: 10;
+p {
+  line-height: 2rem;
 }
 
-div.nav-wrapper a.title {
-    font-size: 3rem; 
-    padding-left: 8vw; 
-    font-weight: bolder;
+.sidenav-trigger {
+  color: #26a69a;
 }
 
-div.nav-wrapper a.title strong {
-    color: hsl(263, 98%, 49%);
-    font-size: 4rem;
-    font-weight: bolder;
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
 }
-/* Navigation bar */
-
-
-/* Top */
-div.parallax-container {
-    height: calc(100vh - 56px);
-}
-
-div.parallax-container h1.title {
-    position: absolute;
-    top: 25%;
+  .parallax-container .section {
     width: 100%;
-    text-align: center;
-    font-size: 12rem;
-    font-weight: bolder;
-    color: black;
-}
+  }
 
-div.parallax-container p.subtext {
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
     position: absolute;
-    top: 58%;
-    left: 40%;
-    color: black;
-}
-/* Top */
-
-
-/* Vision */
-#vision {
-    display: flex;
-    justify-content: center;
-    background-color: rgb(42, 127, 255);
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
 }
 
-#vision_title h1{
-    margin: 0;
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
 }
 
-.c_container {
-    width:500px;
+.icon-block {
+  padding: 0 15px;
 }
-/* Vision */
-
-
-/* Offering */
-#offering {
-    background-color: rgb(149, 203, 212);
-    text-align: center;
-    padding: 2rem 0;
+.icon-block .material-icons {
+  font-size: inherit;
 }
 
-div.offering {
-    width: 90%;
+footer.page-footer {
+  margin: 0;
 }
 
-div.row {
-    margin: 0;
-    padding: 0rem 1.25rem;
+.productContainer {
+  margin: 50px auto;
 }
 
-div.valign-wrapper img.responsive-img {
-    height: 80vh;
-    border-radius: 2rem;
-}
-
-
-/* Offering */
-
-/* Features */
-.info_feature {
-    display: flex;
-    justify-content: center;
-}
-
-.featurePic {
-    width:350px;
-    height:250px;
-}
-
-/*sign up*/
-.signMeUp {
-    display: flex;
-    justify-content: center;
+.card {
+  min-height: 342px;
 }
