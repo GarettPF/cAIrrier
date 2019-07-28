@@ -63,6 +63,18 @@ div.parallax-container p.subtext {
 #offering {
     background-color: rgb(149, 203, 212);
     text-align: center;
+    padding: 2rem 0;
+}
+
+div.row {
+    margin: 0;
+}
+
+div.valign-wrapper img.responsive-img {
+    height: auto;
+    /* margin: auto; */
+    width: 90%;
+    border-radius: 2rem;
 }
 
 
