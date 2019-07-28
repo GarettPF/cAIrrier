@@ -81,8 +81,7 @@ div.row {
 }
 
 div.valign-wrapper img.responsive-img {
-    height: auto;
-    width: 100%;
+    height: 80vh;
     border-radius: 2rem;
 }
 
