@@ -79,3 +79,14 @@ div.valign-wrapper img.responsive-img {
 
 
 /* Offering */
+
+/* Features */
+.info_feature {
+    display: flex;
+    justify-content: center;
+}
+
+.featurePic {
+    width:350px;
+    height:250px;
+}
