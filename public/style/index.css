@@ -1,6 +1,6 @@
 html {
-    font-family: 'Montserrat', sans-serif !important;
-    font-family: 'Source Sans Pro', sans-serif !important;
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Source Sans Pro', sans-serif; */
 }
 
 nav ul a,
@@ -147,7 +147,7 @@ footer.page-footer {
   .transparentBG {
     background-color: #b2d8d8;
   }
-.slogan {
+/* .slogan {
     line-height: 5px;
     font-size: 4em;
     width:300px;
@@ -168,4 +168,4 @@ footer.page-footer {
     z-index:1;
     margin-left: 10%;
     margin-top: 5%;
-}
+} */
