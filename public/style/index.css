@@ -21,7 +21,20 @@ p {
     width: 100%;
   }
 
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
 
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
 
 .icon-block {
   padding: 0 15px;
@@ -56,7 +69,7 @@ footer.page-footer {
 
 .particle-network-animation {
     height: 100vh;
-    background-color: white;
+    background-color: #b2d8d8;
   }
   .particle-network-animation::before {
     z-index: -2;
@@ -125,35 +138,7 @@ footer.page-footer {
   }
   
 
+
   .transparentBG {
-<<<<<<< HEAD
-    background-color: white;
-  }
-
-  .slogan {
-    line-height: 5px;
-    font-size: 4em;
-    width:300px;
-    font-weight: 600;
-    margin-bottom:11%;
-  }
-
-  #desc {
-    margin-top:2px;
-    width:380px;
-    font-size:1.2em;
-    font-family:'Raleway';
-    font-weight:600;
-  }
-
-  #introComponent {
-    position:absolute;
-    z-index:1;
-    margin-left: 10%;
-    margin-top: 5%;
-  }
-  
-=======
     background-color: #b2d8d8;
   }
->>>>>>> 260bb28bd19660572f8e1dc0445ca6fb6ce03e7e
