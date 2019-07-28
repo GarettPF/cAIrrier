@@ -20,6 +20,15 @@ div.nav-wrapper a.title strong {
     font-size: 4rem;
     font-weight: bolder;
 }
+
+
+#vision {
+    display: flex;
+    justify-content: center;
+}
+
+.c_container {
+    width:500px;
 /* Navigation bar */
 
 
