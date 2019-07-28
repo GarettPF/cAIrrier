@@ -323,6 +323,7 @@ pna = new ParticleNetworkAnimation();	pna.init($('.particle-network-animation')[
 var features = document.getElementById("dropdown-feature");
 var dropdownbtn = document.getElementById("dropdown-btn");
 
-dropdownbtn.onclick(function() {
+dropdownbtn.addEventListener("click", ()=> {
 	features.classList.add("show");
+	console.log('oof');
 })
