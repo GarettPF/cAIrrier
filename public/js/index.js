@@ -113,8 +113,8 @@ const HOTJAR_ID = 1419537;
 			velocity: 1, // the higher the faster
 			density: 15000, // the lower the denser
 			netLineDistance: 200,
-			netLineColor: '#006666',
-			particleColors: ['#6D4E5C', '#aaa', '#FFC458' ]
+			netLineColor: '#8B80F9',
+			particleColors: 'blue'
 		};
 		this.canvas = parent.canvas;
 		this.ctx = parent.ctx;
