@@ -20,8 +20,11 @@ div.nav-wrapper a.title strong {
     font-size: 4rem;
     font-weight: bolder;
 }
+/* Navigation bar */
 
 
+
+/* Vision */
 #vision {
     display: flex;
     justify-content: center;
@@ -29,7 +32,9 @@ div.nav-wrapper a.title strong {
 
 .c_container {
     width:500px;
-/* Navigation bar */
+}
+/* Vision */
+
 
 
 /* Top */
