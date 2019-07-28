@@ -51,6 +51,7 @@ div.parallax-container p.subtext {
 #vision {
     display: flex;
     justify-content: center;
+    background-color: rgb(42, 127, 255);
 }
 
 #vision_title h1{
