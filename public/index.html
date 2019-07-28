@@ -6,10 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>-- CAIRRIER --</title>
 
+  <!--Google Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+
+
+  <link rel="stylesheet" href="./style/animate.css">
 
   <!-- update the version number as needed -->
   <script defer src="/__/firebase/6.3.3/firebase-app.js"></script>
@@ -32,185 +37,271 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!--jquery for materialize framework-->
-  <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
 
-  
+
 
 
 
   <!-- start Mixpanel -->
-  <script type="text/javascript">(function(c,a){if(!a.__SV){var b=window;try{var d,m,j,k=b.location,f=k.hash;d=function(a,b){return(m=a.match(RegExp(b+"=([^&]*)")))?m[1]:null};f&&d(f,"state")&&(j=JSON.parse(decodeURIComponent(d(f,"state"))),"mpeditor"===j.action&&(b.sessionStorage.setItem("_mpcehash",f),history.replaceState(j.desiredHash||"",c.title,k.pathname+k.search)))}catch(n){}var l,h;window.mixpanel=a;a._i=[];a.init=function(b,d,g){function c(b,i){var a=i.split(".");2==a.length&&(b=b[a[0]],i=a[1]);b[i]=function(){b.push([i].concat(Array.prototype.slice.call(arguments,
-0)))}}var e=a;"undefined"!==typeof g?e=a[g]=[]:g="mixpanel";e.people=e.people||[];e.toString=function(b){var a="mixpanel";"mixpanel"!==g&&(a+="."+g);b||(a+=" (stub)");return a};e.people.toString=function(){return e.toString(1)+".people (stub)"};l="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
-for(h=0;h<l.length;h++)c(e,l[h]);var f="set set_once union unset remove delete".split(" ");e.get_group=function(){function a(c){b[c]=function(){call2_args=arguments;call2=[c].concat(Array.prototype.slice.call(call2_args,0));e.push([d,call2])}}for(var b={},d=["get_group"].concat(Array.prototype.slice.call(arguments,0)),c=0;c<f.length;c++)a(f[c]);return b};a._i.push([b,d,g])};a.__SV=1.2;b=c.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?
-MIXPANEL_CUSTOM_LIB_URL:"file:"===c.location.protocol&&"//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js";d=c.getElementsByTagName("script")[0];d.parentNode.insertBefore(b,d)}})(document,window.mixpanel||[]);
-mixpanel.init("f465d97fa2b1eea6bc34765d80a9a106");</script>
-<!-- end Mixpanel -->
+  <script type="text/javascript">
+    (function (c, a) {
+      if (!a.__SV) {
+        var b = window;
+        try {
+          var d, m, j, k = b.location,
+            f = k.hash;
+          d = function (a, b) {
+            return (m = a.match(RegExp(b + "=([^&]*)"))) ? m[1] : null
+          };
+          f && d(f, "state") && (j = JSON.parse(decodeURIComponent(d(f, "state"))), "mpeditor" === j.action && (b
+            .sessionStorage.setItem("_mpcehash", f), history.replaceState(j.desiredHash || "", c.title, k
+              .pathname + k.search)))
+        } catch (n) {}
+        var l, h;
+        window.mixpanel = a;
+        a._i = [];
+        a.init = function (b, d, g) {
+          function c(b, i) {
+            var a = i.split(".");
+            2 == a.length && (b = b[a[0]], i = a[1]);
+            b[i] = function () {
+              b.push([i].concat(Array.prototype.slice.call(arguments,
+                0)))
+            }
+          }
+          var e = a;
+          "undefined" !== typeof g ? e = a[g] = [] : g = "mixpanel";
+          e.people = e.people || [];
+          e.toString = function (b) {
+            var a = "mixpanel";
+            "mixpanel" !== g && (a += "." + g);
+            b || (a += " (stub)");
+            return a
+          };
+          e.people.toString = function () {
+            return e.toString(1) + ".people (stub)"
+          };
+          l =
+            "disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove"
+            .split(" ");
+          for (h = 0; h < l.length; h++) c(e, l[h]);
+          var f = "set set_once union unset remove delete".split(" ");
+          e.get_group = function () {
+            function a(c) {
+              b[c] = function () {
+                call2_args = arguments;
+                call2 = [c].concat(Array.prototype.slice.call(call2_args, 0));
+                e.push([d, call2])
+              }
+            }
+            for (var b = {}, d = ["get_group"].concat(Array.prototype.slice.call(arguments, 0)), c = 0; c < f
+              .length; c++) a(f[c]);
+            return b
+          };
+          a._i.push([b, d, g])
+        };
+        a.__SV = 1.2;
+        b = c.createElement("script");
+        b.type = "text/javascript";
+        b.async = !0;
+        b.src = "undefined" !== typeof MIXPANEL_CUSTOM_LIB_URL ?
+          MIXPANEL_CUSTOM_LIB_URL : "file:" === c.location.protocol &&
+          "//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//) ?
+          "https://cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js" : "//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js";
+        d = c.getElementsByTagName("script")[0];
+        d.parentNode.insertBefore(b, d)
+      }
+    })(document, window.mixpanel || []);
+    mixpanel.init("f465d97fa2b1eea6bc34765d80a9a106");
+  </script>
+  <!-- end Mixpanel -->
 
 
 </head>
 
 <body>
-    <nav class="transparentBG" role="navigation">
-        <div class="nav-wrapper container">
-            <img src="images/cAIrrierTrans.png" alt="Navigation Icon" style="width: 56px">
-            <a id="logo-container" href="/" class="brand-logo left hide-on-med-and-down"><img src="images/NavTrans.png" alt="cAIre technologies" style="height: 56px;"></a>
-            <ul class="right hide-on-med-and-down">
-                <li><a href="https://google.com">Sign Up Now</a></li>
-                <li><a href="https://google.com">Login</a></li>
-            </ul>
-    
-            <ul id="nav-mobile" class="sidenav">
-              <li><a href="https://google.com">Sign Up Now</a></li>
-              <li><a href="https://google.com">Login</a></li>
-            </ul>
-            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-        </div>
-    </nav>
-    
-    <div id="index-banner" class="parallax-container" style="height: calc(100vh - 56px);">
+  <nav class="transparentBG" role="navigation">
+    <div class="nav-wrapper container">
+      <ul class="right hide-on-med-and-down">
+        <li><a href="https://google.com">Sign Up Now</a></li>
+        <li><a href="https://google.com">Login</a></li>
+      </ul>
 
-        <div class='particle-network-animation'>
-          </div>
-        <div class="section no-pad-bot">
-            <div class="container">
-                <img src="images/HomeTrans.png" style="width: 100%; position: relative; top: 10vh;">
-                <div class="row center" style="position: relative; top: 3rem;">
-                    <a href="#products" id="download-button"
-                       class="btn-large waves-effect waves-light teal lighten-1">Sign Up Now</a>
-                </div>
-                <br><br>
-    
-            </div>
-        </div>
-        <div class="parallax"><img style="max-width: 996px;" src="https://www.myhopehealth.org/wp-content/uploads/2017/07/1858912-1080x675.jpg" alt="Unsplashed background img 1"></div>
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="https://google.com">Sign Up Now</a></li>
+        <li><a href="https://google.com">Login</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
+  </nav>
+
+
+  <div  class="animated fadeInUp" id="introComponent">
+      <p class="slogan animated slideInLeft">because</p>
+      <p class="slogan animated slideInRight ">we c<span style="color: #b2d8d8">ai</span>r</p>
+      <p class="animated fadeInUp delay-1s" id="desc">We believe a healthcare messaging platform should be trustworthy, intuitive, confidential, and easily customizable to meet
+        the specific needs of your patients with deep learning.</p>
+        <a class="waves-effect waves-light btn-small">learn more</a>
+  </div>
 
 
 
-    <div class="teal valign-wrapper" style="height: 75vh; color: white;">
-      <div class="container valign-wrapper" style="text-align: center;">
-        <div class="row" style="font-weight: bolder">
-          <h1>- OUR VISION -</h1>
-          <p class="Light">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        </div>
-      </div>
+  <div id="index-banner" class="parallax-container" style="height: calc(100vh - 56px);">
+    <div class='particle-network-animation'>
     </div>
-    
-    
-    <div class="container">
-        <div class="section">
-    
-            <!--   Icon Section   -->
-            <div class="row" style="padding: 5rem 0rem">
-                <div class="col s12 m6">
-                    <div class="icon-block">
-                        <h2 class="center brown-text"><i class="material-icons">face</i></h2>
-                        <h5 class="center">- What We Offer -</h5>
-    
-                        <p class="light" style="text-align: center">cAIrrier is a semi-automated two way messaging 
-                            platform designed for health care workers that implements
-                            deep learning to optimize communication with patients.
-                            We believe a messaging platform should be trustworthy,
-                            intuitive, confidential, and easily customizable to meet 
-                            the specific needs of your practice. </p>
-                        <p class="Light" style="text-align: center; font-size: 1.3rem;">Because we cAIre</p>
-                    </div>
-                </div>
-    
-                <div class="col s12 m6">
-                    <div class="icon-block">
-                        <img src="images/pongsawat-pasom-GqNqFMh3OoU-unsplash.jpg" style="width: 100%; border-radius: 4rem;" class="responsive-img">
-                    </div>
-                </div>
-            </div>
-    
-        </div>
-    </div>
-
-    <div class="teal" id="dropdown-feature">
+    <div class="section no-pad-bot">
       <div class="container">
-        <div class="section">
-          <div class="row">
-            <div class="col s12 m4">
-              <div class="card icon-block" style="padding: 1rem;">
-                <h2 class="center"><i class="material-icons">face</i></h2>
-                <h5 class="center">BIG FEATURE</h5>
-                <p class="Light" style="text-align: center">Feature Feature Feature Feature Feature Feature Feature Feature Feature Feature Feature Feature Feature Feature Feature Feature Feature Feature Feature Feature Feature Feature </p>
-              </div>
+        <img src="images/HomeTrans.png" style="width: 100%; position: relative; top: 10vh;">
+        <div class="row center" style="position: relative; top: 3rem;">
+          <a href="#products" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Sign Up
+            Now</a>
+        </div>
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax"><img style="max-width: 996px;"
+        src="https://www.myhopehealth.org/wp-content/uploads/2017/07/1858912-1080x675.jpg"
+        alt="Unsplashed background img 1"></div>
+  </div>
+
+
+
+  <div class="teal valign-wrapper" style="height: 75vh; color: white;">
+    <div class="container valign-wrapper" style="text-align: center;">
+      <div class="row" style="font-weight: bolder">
+        <h1>- OUR VISION -</h1>
+        <p class="Light">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+          the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+          electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+          Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
+          PageMaker including versions of Lorem Ipsum.</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row" style="padding: 5rem 0rem">
+        <div class="col s12 m6">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">face</i></h2>
+            <h5 class="center">- What We Offer -</h5>
+
+            <p class="light" style="text-align: center">cAIrrier is a semi-automated two way messaging
+              platform designed for health care workers that implements
+              deep learning to optimize communication with patients.
+              We believe a messaging platform should be trustworthy,
+              intuitive, confidential, and easily customizable to meet
+              the specific needs of your practice. </p>
+            <p class="Light" style="text-align: center; font-size: 1.3rem;">Because we cAIre</p>
+          </div>
+        </div>
+
+        <div class="col s12 m6">
+          <div class="icon-block">
+            <img src="images/pongsawat-pasom-GqNqFMh3OoU-unsplash.jpg" style="width: 100%; border-radius: 4rem;"
+              class="responsive-img">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="teal" id="dropdown-feature">
+    <div class="container">
+      <div class="section">
+        <div class="row">
+          <div class="col s12 m4">
+            <div class="card icon-block" style="padding: 1rem;">
+              <h2 class="center"><i class="material-icons">face</i></h2>
+              <h5 class="center">Data Driven</h5>
+              <p class="Light" style="text-align: center">Feature Feature Feature Feature Feature Feature Feature
+                Feature Feature Feature Feature Feature Feature Feature Feature Feature Feature Feature Feature Feature
+                Feature Feature </p>
             </div>
-            <div class="col s12 m4">
-              <div class="card icon-block" style="padding: 1rem;">
-                <h2 class="center"><i class="material-icons">face</i></h2>
-                <h5 class="center">BIG FEATURE</h5>
-                <p class="Light" style="text-align: center">Feature Feature Feature Feature Feature Feature Feature Feature Feature Feature Feature Feature Feature Feature Feature Feature Feature Feature Feature Feature Feature Feature </p>
-              </div>
+          </div>
+          <div class="col s12 m4">
+            <div class="card icon-block" style="padding: 1rem;">
+              <h2 class="center"><i class="material-icons">face</i></h2>
+              <h5 class="center">SMS Feature</h5>
+              <p class="Light" style="text-align: center">Feature Feature Feature Feature Feature Feature Feature
+                Feature Feature Feature Feature Feature Feature Feature Feature Feature Feature Feature Feature Feature
+                Feature Feature </p>
             </div>
-            <div class="col s12 m4">
-              <div class="card icon-block" style="padding: 1rem;">
-                <h2 class="center"><i class="material-icons">face</i></h2>
-                <h5 class="center">BIG FEATURE</h5>
-                <p class="Light" style="text-align: center">Feature Feature Feature Feature Feature Feature Feature Feature Feature Feature Feature Feature Feature Feature Feature Feature Feature Feature Feature Feature Feature Feature </p>
-              </div>
+          </div>
+          <div class="col s12 m4">
+            <div class="card icon-block" style="padding: 1rem;">
+              <h2 class="center"><i class="material-icons">face</i></h2>
+              <h5 class="center">Machine Learning</h5>
+              <p class="Light" style="text-align: center">Feature Feature Feature Feature Feature Feature Feature
+                Feature Feature Feature Feature Feature Feature Feature Feature Feature Feature Feature Feature Feature
+                Feature Feature </p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    
-    
-    <div class="parallax-container valign-wrapper">
-        <div class="section no-pad-bot">
-            <div class="container">
-                <div class="row center">
-                    <h5 class="header col s12 light">"Holy cow I love the quality of this shirt!" - Wayne Gretzky after he
-                        wore it. He compared it to this truck that rusted in 2 days.</h5>
-                </div>
-            </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">"Holy cow I love the quality of this shirt!" - Wayne Gretzky after he
+            wore it. He compared it to this truck that rusted in 2 days.</h5>
         </div>
-        <div class="parallax"><img src="./images/background2.jpg" alt="Unsplashed background img 3"></div>
+      </div>
     </div>
-    
-    <footer class="page-footer teal">
-        <div class="container">
-            <div class="row">
-                <div class="col l6 s12">
-                    <h5 class="white-text">Company Bio</h5>
-                    <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's
-                        our full time job. Any amount would help support and continue development on this project and is
-                        greatly appreciated.</p>
-    
-    
-                </div>
-                <div class="col l6 s12">
-                    <h5 class="white-text">Connect</h5>
-                    <ul>
-                        <li><a class="white-text" href="#!">Instagram</a></li>
-                        <li><a class="white-text" href="#!">FaCeBoOk</a></li>
-                        <li><a class="white-text" href="#!">TwEEeter</a></li>
-                        <li><a class="white-text" href="#!">C00l S0cial Netw0rk</a></li>
-                    </ul>
-                </div>
-            </div>
+    <div class="parallax"><img src="./images/background2.jpg" alt="Unsplashed background img 3"></div>
+  </div>
+
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's
+            our full time job. Any amount would help support and continue development on this project and is
+            greatly appreciated.</p>
+
+
         </div>
-        <div class="footer-copyright">
-            <div class="container">
-                Made by <a class="brown-text text-lighten-3" href="http://mogdan.yxz">Morgan Dean</a> and <a
-                    class="brown-text text-lighten-3" href="https://nickwong.io">Nick Wong</a>
-            </div>
+        <div class="col l6 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Instagram</a></li>
+            <li><a class="white-text" href="#!">FaCeBoOk</a></li>
+            <li><a class="white-text" href="#!">TwEEeter</a></li>
+            <li><a class="white-text" href="#!">C00l S0cial Netw0rk</a></li>
+          </ul>
         </div>
-    </footer>
-    
-    
-    <!--  Scripts-->
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script async src="https://www.googletagmanager.com/gtag/js"></script>
-    <script src="js/materialize.js"></script>
-    <script src="js/index.js"></script>
-    
-    </body>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        Made by <a class="brown-text text-lighten-3" href="http://mogdan.yxz">Morgan Dean</a> and <a
+          class="brown-text text-lighten-3" href="https://nickwong.io">Nick Wong</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/index.js"></script>
+
+</body>
 
 </html>
