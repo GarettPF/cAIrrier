@@ -147,25 +147,8 @@ footer.page-footer {
   .transparentBG {
     background-color: #b2d8d8;
   }
-/* .slogan {
-    line-height: 5px;
-    font-size: 4em;
-    width:300px;
-    font-weight: 600;
-    margin-bottom:11%;
-}
 
-#desc {
-    margin-top:2px;
-    width:380px;
-    font-size:1.2em;
-    font-family:'Raleway';
-    font-weight:600;
-}
-
-#introComponent {
-    position:absolute;
-    z-index:1;
-    margin-left: 10%;
-    margin-top: 5%;
-} */
+  .show {
+      display: block;
+      height: 75vh;
+  }

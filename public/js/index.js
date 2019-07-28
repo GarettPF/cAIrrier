@@ -313,3 +313,16 @@ pna = new ParticleNetworkAnimation();	pna.init($('.particle-network-animation')[
 
 }());
 
+
+
+
+
+
+// Garett's Javascript
+
+var features = document.getElementById("dropdown-feature");
+var dropdownbtn = document.getElementById("dropdown-btn");
+
+dropdownbtn.onclick(function() {
+	features.classList.add("show");
+})
