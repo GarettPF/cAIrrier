@@ -1607,7 +1607,6 @@
 .fadeInUp {
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
-  
 }
 
 @-webkit-keyframes fadeInUpBig {

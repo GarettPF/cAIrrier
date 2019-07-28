@@ -10,7 +10,7 @@
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-
+  <link rel="stylesheet" href="./style/animate.css">
   <!-- update the version number as needed -->
   <script defer src="/__/firebase/6.3.3/firebase-app.js"></script>
   <!-- include only the Firebase features as you need -->
@@ -109,11 +109,13 @@ mixpanel.init("f465d97fa2b1eea6bc34765d80a9a106");</script>
             <div class="row" style="padding: 5rem 0rem">
                 <div class="col s12 m6">
                     <div class="icon-block">
-                        <h2 class="center brown-text"><i class="material-icons">face</i></h2>
-                        <h5 class="center">- What We Offer -</h5>
-    
-                        <p class="light" style="text-align: center">cAIrrier is a semi-automated two way messaging platform designed for health care workers that implements deep learning to optimize communication with patients. We believe a messaging platform should be trustworthy, intuitive, confidential, and easily customizable to meet the specific needs of your practice.  </p>
-                        <p class="Light" style="text-align: center; font-size: 1.3rem;">Because we cAIr</p>
+                        <div  class="animated fadeInUp" id="introComponent">
+                            <p class="slogan animated slideInLeft">because</p>
+                            <p class="slogan animated slideInRight ">we c<span style="color: #b2d8d8">ai</span>r</p>
+                            <p class="animated fadeInUp " id="desc">We believe a healthcare messaging platform should be trustworthy, intuitive, confidential, and easily customizable to meet
+                              the specific needs of your patients with deep learning.</p>
+                              <a class="waves-effect waves-light btn-small">learn more</a>
+                        </div>
                     </div>
                 </div>
     
