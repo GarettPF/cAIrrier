@@ -22,15 +22,6 @@ body {
   .col.s6 > .btn {
      width: 100%;
   }
-  .gender-male,.gender-female {
-    display: inline-block;
-  }
-  .gender-female {
-    margin-left: 35px;
-  }
-  radio:required {
-    border-color: red;
-  }
   .container {
     animation: showUp 0.5s cubic-bezier(0.18, 1.3, 1, 1) forwards;
   }
