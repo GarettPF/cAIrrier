@@ -400,3 +400,29 @@
 [debug] [2019-07-28T00:32:04.943Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/garettpascual-folster/Desktop/cAIrrier/functions/node_modules/firebase-functions/lib/index.js"}
 [debug] [2019-07-28T00:32:04.944Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/garettpascual-folster/Desktop/cAIrrier/functions/node_modules/firebase-functions/lib/index.js"}
 >>>>>>> aa9d2b95a15740bfca0ee3d3dafc16526cfcba07
+[debug] [2019-07-28T01:44:00.316Z] ----------------------------------------------------------------------
+[debug] [2019-07-28T01:44:00.318Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2019-07-28T01:44:00.318Z] CLI Version:   7.2.1
+[debug] [2019-07-28T01:44:00.318Z] Platform:      darwin
+[debug] [2019-07-28T01:44:00.319Z] Node Version:  v10.16.0
+[debug] [2019-07-28T01:44:00.319Z] Time:          Sat Jul 27 2019 15:44:00 GMT-1000 (Hawaii-Aleutian Standard Time)
+[debug] [2019-07-28T01:44:00.319Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-07-28T01:44:00.336Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-07-28T01:44:00.336Z] > authorizing via signed-in user
+[debug] [2019-07-28T01:44:00.337Z] [iam] checking project cairrier for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]
+[debug] [2019-07-28T01:44:00.338Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-07-28T01:44:00.339Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-07-28T01:44:00.767Z] <<< HTTP RESPONSE 200
+[debug] [2019-07-28T01:44:00.786Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/cairrier:testIamPermissions  
+
+[debug] [2019-07-28T01:44:01.325Z] <<< HTTP RESPONSE 200
+[debug] [2019-07-28T01:44:01.329Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/cairrier  
+ 
+[debug] [2019-07-28T01:44:01.819Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'cairrier'...
+[info] 
+[info] i  deploying database, storage, firestore, functions, hosting
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
