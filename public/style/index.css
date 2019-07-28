@@ -25,7 +25,7 @@ div.nav-wrapper a.title strong {
 
 /* Top */
 div.parallax-container {
-    height: calc(100vh - 64px);
+    height: calc(100vh - 56px);
 }
 
 div.parallax-container h1.title {
@@ -51,6 +51,7 @@ div.parallax-container p.subtext {
 #vision {
     display: flex;
     justify-content: center;
+    background-color: rgb(42, 127, 255);
 }
 
 #vision_title h1{
@@ -76,11 +77,12 @@ div.offering {
 
 div.row {
     margin: 0;
+    padding: 0rem 1.25rem;
 }
 
 div.valign-wrapper img.responsive-img {
     height: auto;
-    width: 90%;
+    width: 100%;
     border-radius: 2rem;
 }
 
