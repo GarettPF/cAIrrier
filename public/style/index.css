@@ -49,9 +49,10 @@ div.parallax-container p.subtext {
 
 /* Vision */
 #vision {
+    height:650px;
     display: flex;
     justify-content: center;
-    background-color: rgb(42, 127, 255);
+    background-color: rgba(42, 127, 255, 0.7);
 }
 
 #vision_title h1{
@@ -66,9 +67,10 @@ div.parallax-container p.subtext {
 
 /* Offering */
 #offering {
-    background-color: rgb(149, 203, 212);
+    background-color: rgba(149, 203, 212, 0.7);
     text-align: center;
     padding: 2rem 0;
+    height:650px;
 }
 
 div.offering {
@@ -103,5 +105,18 @@ div.valign-wrapper img.responsive-img {
 /*sign up*/
 .signMeUp {
     display: flex;
+    justify-content: center;
+}
+
+#signUpNOW {
+    height:300px;
+}
+
+#featureList {
+    height:400px;
+}
+
+.h_align {
+    display:flex;
     justify-content: center;
 }
