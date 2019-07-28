@@ -53,6 +53,10 @@ div.parallax-container p.subtext {
     justify-content: center;
 }
 
+#vision_title h1{
+    margin: 0;
+}
+
 .c_container {
     width:500px;
 }
@@ -66,13 +70,16 @@ div.parallax-container p.subtext {
     padding: 2rem 0;
 }
 
+div.offering {
+    width: 90%;
+}
+
 div.row {
     margin: 0;
 }
 
 div.valign-wrapper img.responsive-img {
     height: auto;
-    /* margin: auto; */
     width: 90%;
     border-radius: 2rem;
 }
