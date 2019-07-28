@@ -90,3 +90,9 @@ div.valign-wrapper img.responsive-img {
     width:350px;
     height:250px;
 }
+
+/*sign up*/
+.signMeUp {
+    display: flex;
+    justify-content: center;
+}
