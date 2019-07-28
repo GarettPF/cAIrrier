@@ -23,20 +23,6 @@ div.nav-wrapper a.title strong {
 /* Navigation bar */
 
 
-
-/* Vision */
-#vision {
-    display: flex;
-    justify-content: center;
-}
-
-.c_container {
-    width:500px;
-}
-/* Vision */
-
-
-
 /* Top */
 div.parallax-container {
     height: calc(100vh - 64px);
@@ -59,3 +45,17 @@ div.parallax-container p.subtext {
     color: black;
 }
 /* Top */
+
+
+/* Vision */
+#vision {
+    display: flex;
+    justify-content: center;
+}
+
+.c_container {
+    width:500px;
+}
+/* Vision */
+
+
