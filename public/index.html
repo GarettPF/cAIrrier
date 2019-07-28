@@ -23,6 +23,7 @@
 
   <!-- Stylesheet for materialize -->
   <link rel="stylesheet" href="style/materialize.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat%7CSource+Sans+Pro&display=swap" rel="stylesheet">
   <!-- Stylesheet for index.html -->
   <link rel="stylesheet" href="style/index.css">
   <!--- Script for materialize-->
@@ -73,7 +74,7 @@ mixpanel.init("f465d97fa2b1eea6bc34765d80a9a106");</script>
     
     <div id="index-banner" class="parallax-container" style="height: calc(100vh - 56px);">
 
-        <div class='particle-network-animation'>
+        <div class='particle-network-animation' style="position: fixed; top: 0; height: 100vh; width: 100vw; z-index: -1">
           </div>
         <div class="section no-pad-bot">
             <div class="container">
@@ -86,7 +87,7 @@ mixpanel.init("f465d97fa2b1eea6bc34765d80a9a106");</script>
     
             </div>
         </div>
-        <div class="parallax"><img style="max-width: 996px;" src="https://www.myhopehealth.org/wp-content/uploads/2017/07/1858912-1080x675.jpg" alt="Unsplashed background img 1"></div>
+        <!-- <div class="parallax"><img style="max-width: 996px;" src="https://www.myhopehealth.org/wp-content/uploads/2017/07/1858912-1080x675.jpg" alt="Unsplashed background img 1"></div> -->
     </div>
 
 
@@ -94,8 +95,8 @@ mixpanel.init("f465d97fa2b1eea6bc34765d80a9a106");</script>
     <div class="teal valign-wrapper" style="height: 75vh; color: white;">
       <div class="container valign-wrapper" style="text-align: center;">
         <div class="row" style="font-weight: bolder">
-          <h1>- OUR VISION -</h1>
-          <p class="Light">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          <h1>- WHAT IS CARRIER -</h1>
+          <p class="Light">cAIrrier is a semi-automated two way messaging platform designed for health care workers that implements deep learning to optimize communication with patients. We believe a messaging platform should be trustworthy, intuitive, confidential, and easily customizable to meet the specific needs of your practice. </p>
         </div>
       </div>
     </div>
@@ -130,7 +131,7 @@ mixpanel.init("f465d97fa2b1eea6bc34765d80a9a106");</script>
         </div>
     </div>
 
-    <div class="black" style="height: 2px; width: 100vw;"></div>
+    <div class="white" style="height: 2px; width: 100vw;"></div>
 
     <div class="teal" id="dropdown-feature" style="display: none;">
       <div class="container">
@@ -172,20 +173,20 @@ mixpanel.init("f465d97fa2b1eea6bc34765d80a9a106");</script>
       </div>
     </div>
 
-    <div class="container">
+    <div class="container" style="display: none">
       <br>
       <div class="row">
         <div class="col s12 m4">
           <div class="card center">
             <div class="container">
               <br>
-              <h1 class="Light">Small</h1>
+              <h4 class="Light">Small</h4>
               <ul>
                 <li>$1,800 a year</li>
                 <li>$150 a month</li>
                 <li>$300 start up</li>
                 <li>Up to 5 accounts</li>
-              </ul>
+              </ul> <br>
               <a href="#products" id="download-button"
                           class="btn-large waves-effect waves-light teal lighten-1">Sign Up Now</a>
             </div>
@@ -195,13 +196,13 @@ mixpanel.init("f465d97fa2b1eea6bc34765d80a9a106");</script>
           <div class="card center">
             <div class="container">
               <br>
-              <h1 class="Light">Medium</h1>
+              <h4 class="Light">Medium</h4>
               <ul>
                 <li>$3,000 a year</li>
                 <li>$250 a month</li>
                 <li>$500 start up</li>
                 <li>Up to 20 accounts</li>
-              </ul>
+              </ul> <br>
               <a href="#products" id="download-button"
                           class="btn-large waves-effect waves-light teal lighten-1">Sign Up Now</a>
             </div>
@@ -211,13 +212,13 @@ mixpanel.init("f465d97fa2b1eea6bc34765d80a9a106");</script>
           <div class="card center">
             <div class="container">
               <br>
-              <h1 class="Light">Large</h1>
+              <h4 class="Light">Large</h4>
               <ul>
                 <li>$4,200 a year</li>
                 <li>$350 a month</li>
                 <li>$700 start up</li>
                 <li>Up to 50+ accounts</li>
-              </ul>
+              </ul> <br>
               <a href="#products" id="download-button"
                           class="btn-large waves-effect waves-light teal lighten-1">Sign Up Now</a>
             </div>
@@ -225,6 +226,8 @@ mixpanel.init("f465d97fa2b1eea6bc34765d80a9a106");</script>
         </div>
       </div>
     </div>
+
+    <div class="white" style="height: 2px; width: 100vw;"></div>
     
     <footer class="page-footer teal">
         <div class="container">
