@@ -42,6 +42,17 @@ footer.page-footer {
   min-height: 342px;
 }
 
+#sociallist li{
+    float: right;
+    margin-left: 0.5rem;
+}
+
+#sociallist li a img {
+    width: 50px;
+
+}
+
+/* AI stuff lol */
 
 .particle-network-animation {
     height: 100vh;
@@ -115,6 +126,7 @@ footer.page-footer {
   
 
   .transparentBG {
+<<<<<<< HEAD
     background-color: white;
   }
 
@@ -141,3 +153,7 @@ footer.page-footer {
     margin-top: 5%;
   }
   
+=======
+    background-color: #b2d8d8;
+  }
+>>>>>>> 260bb28bd19660572f8e1dc0445ca6fb6ce03e7e
