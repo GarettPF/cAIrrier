@@ -319,21 +319,8 @@ pna = new ParticleNetworkAnimation();	pna.init($('.particle-network-animation')[
 
 
 // Garett's Javascript
-<<<<<<< HEAD
-
-var features = document.getElementById("dropdown-feature");
-var dropdownbtn = document.getElementById("dropdown-btn");
-
-dropdownbtn.addEventListener("click", ()=> {
-	features.classList.add("show");
-	console.log('oof');
-})
-
-
-=======
 var btn = document.getElementById("business-button");
 btn.addEventListener('click', ()=> {
 	var business = document.getElementById("business");
 	business.classList.add("show");
 })
->>>>>>> cdee383b64e224c3aa752a88a360ef8ea62d972f
