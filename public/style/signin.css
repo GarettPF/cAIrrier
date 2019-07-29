@@ -70,3 +70,14 @@ body {
     display: flex;
     justify-content: center;
   }
+
+
+  #centerButton {
+    display: flex;
+    flex-direction: center;
+    margin-top:10%;
+  }
+
+  #ThankYouForm {
+    display:none;
+  }
