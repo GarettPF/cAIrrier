@@ -1,0 +1,50 @@
+<head>
+    <link rel="stylesheet" href="style/signin.css">
+    <link rel="stylesheet" href="style/materialize.css">
+    <link rel="stylesheet" href="style/fullpage.css">
+    <link rel="stylesheet" href="style/animate.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat%7CSource+Sans+Pro&display=swap" rel="stylesheet">
+</head>
+
+<div class="container" id="form">
+    <div class="row">
+        <form class="col s12" id="reg-form">
+            <div class="row">
+                <div class="input-field col s6">
+                    <input id="first_name" type="text" class="validate" placeholder="First Name" required>
+                    <!-- <label for="first_name">First Name</label> -->
+                </div>
+                <div class="input-field col s6">
+                    <input id="last_name" type="text" class="validate" placeholder="Last Name" required>
+                    <!-- <label for="last_name">Last Name</label> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="email" type="email" class="validate" placeholder="Email" required>
+                    <!-- <label for="email">Email</label> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class=" col s6">
+                    <button id="submit" class="btn btn-large waves-effect waves-light">Register
+                    <i class="material-icons right">done</i>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="container" id="confirm" style="display: none;">
+    <div class="row">
+        <div class="col s12">
+            <h4 class="Light center">Thanks for signing up with</h4>
+            <h5 class="Light center">Our platform is coming soon</h5>
+            <h6 class="Light center">but we'll contact yah :)</h6>
+        </div>
+    </div>
+</div>
+
+<script src="js/signin.js"></script>
