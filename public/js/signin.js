@@ -9,6 +9,7 @@ var confirm = document.getElementById("confirm");
 var submit = document.getElementById("submit");
 
 submit.addEventListener('click', ()=> {
+    event.preventDefault();
     form.style.display = "none";
     confirm.style.display = "block";
 })
