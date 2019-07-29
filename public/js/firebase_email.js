@@ -1,10 +1,14 @@
 var returnToSender = document.querySelector('#submit');
-var first_name = document.querySelector('#first_name');
-var last_name = document.querySelector('#last_name')
+var full_name = document.querySelector('#full_name');
 var emails = document.querySelector('#email')
 var organization = document.querySelector('#organization')
 var form = document.getElementById("form");
 var confirm = document.getElementById("confirm");
+var displayForm = document.querySelector("#form");
+var ThankYouForm = document.querySelector("#ThankYouForm")
+
+
+ThankYouForm.style.display="none"
 
 // Your web app's Firebase configuration
 var firebaseConfig = {
@@ -22,16 +26,19 @@ firebase.initializeApp(firebaseConfig);
 var db = firebase.firestore();
 
 returnToSender.addEventListener("click", () => {
+    displayForm.style.display = "none";
+    ThankYouForm.style.display="block";
+    console.log('Oof');
     event.preventDefault();
     confirm.style.display = "block";
     db.collection("Contacts").add({
-            first: first_name.value,
-            last: last_name.value,
+            full_name: full_name.value,
+            email: emails.value,
             organization: organization.value,
-            email: emails.value
         })
         .then(function (docRef) {
             console.log("Document written with ID: ", docRef.id);
+            displayForm.style.display = "none";
         })
         .catch(function (error) {
             console.error("Error adding document: ", error);
