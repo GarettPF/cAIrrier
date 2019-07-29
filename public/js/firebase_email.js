@@ -1,4 +1,8 @@
 var returnToSender = document.querySelector('#submit');
+var first_name = document.querySelector('#first_name');
+var last_name = document.querySelector('#last_name')
+var email = document.querySelector('#email')
+var organization = document.querySelector('#organization')
 
 
 // Your web app's Firebase configuration
@@ -17,12 +21,13 @@ firebase.initializeApp(firebaseConfig);
 var db = firebase.firestore();
 
 returnToSender.addEventListener("click", () => {
+    event.preventDefault();
     console.log('please work man');
     db.collection("Contacts").add({
-            first: "Jeraldy",
-            last: "Cascayan",
-            organization: "healthcare startup",
-            email: "email"
+            first: first_name.value,
+            last: last_name.value,
+            organization: organization.value,
+            email: email.vallue
         })
         .then(function (docRef) {
             console.log("Document written with ID: ", docRef.id);
