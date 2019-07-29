@@ -1,0 +1,42 @@
+@font-face {
+    font-family: "Aldrich";
+    src: url('../src/fonts/Aldrich/Aldrich-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url('../src/fonts/Montserrat/Montserrat-Black.ttf') format('truetype');
+    src: url('../src/fonts/Montserrat/Montserrat-BlackItalic.ttf') format('truetype');
+    src: url('../src/fonts/Montserrat/Montserrat-Bold.ttf') format('truetype');
+    src: url('../src/fonts/Montserrat/Montserrat-BoldItalic.ttf') format('truetype');
+    src: url('../src/fonts/Montserrat/Montserrat-ExtraBold.ttf') format('truetype');
+    src: url('../src/fonts/Montserrat/Montserrat-ExtraBoldItalic.ttf') format('truetype');
+    src: url('../src/fonts/Montserrat/Montserrat-ExtraLight.ttf') format('truetype');
+    src: url('../src/fonts/Montserrat/Montserrat-ExtraLightItalic.ttf') format('truetype');
+    src: url('../src/fonts/Montserrat/Montserrat-Light.ttf') format('truetype');
+    src: url('../src/fonts/Montserrat/Montserrat-LightItalic.ttf') format('truetype');
+    src: url('../src/fonts/Montserrat/Montserrat-Medium.ttf') format('truetype');
+    src: url('../src/fonts/Montserrat/Montserrat-MediumItalic.ttf') format('truetype');
+    src: url('../src/fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
+    src: url('../src/fonts/Montserrat/Montserrat-RegularItalic.ttf') format('truetype');
+    src: url('../src/fonts/Montserrat/Montserrat-SemiBold.ttf') format('truetype');
+    src: url('../src/fonts/Montserrat/Montserrat-SemiBoldItalic.ttf') format('truetype');
+    src: url('../src/fonts/Montserrat/Montserrat-Thin.ttf') format('truetype');
+    src: url('../src/fonts/Montserrat/Montserrat-ThinItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Source_Sans_Pro";
+    src: url('../src/fonts/Source_Sans_Pro/SourceSansPro-Black.ttf') format('truetype');
+    src: url('../src/fonts/Source_Sans_Pro/SourceSansPro-BlackItalic.ttf') format('truetype');
+    src: url('../src/fonts/Source_Sans_Pro/SourceSansPro-Bold.ttf') format('truetype');
+    src: url('../src/fonts/Source_Sans_Pro/SourceSansPro-BoldItalic.ttf') format('truetype');
+    src: url('../src/fonts/Source_Sans_Pro/SourceSansPro-ExtraLight.ttf') format('truetype');
+    src: url('../src/fonts/Source_Sans_Pro/SourceSansPro-ExtraLightItalic.ttf') format('truetype');
+    src: url('../src/fonts/Source_Sans_Pro/SourceSansPro-Light.ttf') format('truetype');
+    src: url('../src/fonts/Source_Sans_Pro/SourceSansPro-LightItalic.ttf') format('truetype');
+    src: url('../src/fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf') format('truetype');
+    src: url('../src/fonts/Source_Sans_Pro/SourceSansPro-RegularItalic.ttf') format('truetype');
+    src: url('../src/fonts/Source_Sans_Pro/SourceSansPro-SemiBold.ttf') format('truetype');
+    src: url('../src/fonts/Source_Sans_Pro/SourceSansPro-SemiBoldItalic.ttf') format('truetype');
+}
