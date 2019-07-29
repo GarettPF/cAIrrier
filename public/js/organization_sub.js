@@ -1,14 +1,15 @@
-console.log("MVP")
+firebase.initializeApp(firebaseConfig);
 
-db.collection("Contacts").add({
-    Fname: "Jeraldy Cascayan",
-    organizatoin: "Japan",
-    email:"test@gmail.com",
-    phone_n:"+18084857608"
+
+// Add a new document in collection "cities"
+db.collection("cities").doc("LA").set({
+    name: "Los Angeles",
+    state: "CA",
+    country: "USA"
 })
-.then(function(docRef) {
-    console.log("Document written with ID: ", docRef.id);
+.then(function() {
+    console.log("Document successfully written!");
 })
 .catch(function(error) {
-    console.error("Error adding document: ", error);
+    console.error("Error writing document: ", error);
 });
