@@ -30,7 +30,6 @@ returnToSender.addEventListener("click", () => {
     ThankYouForm.style.display="block";
     console.log('Oof');
     event.preventDefault();
-    confirm.style.display = "block";
     db.collection("Contacts").add({
             full_name: full_name.value,
             email: emails.value,
