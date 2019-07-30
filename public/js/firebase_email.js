@@ -25,14 +25,14 @@ firebase.initializeApp(firebaseConfig);
 
 var db = firebase.firestore();
 
-returnToSender.addEventListener("click", () => {
-    if (!full_name.value === '' &&
-        !emails.value === '' &&
-        !organization.value === '') {
+returnToSender.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (full_name.value != '' &&
+        emails.value != '' &&
+        organization.value != '') {
             displayForm.style.display = "none";
             ThankYouForm.style.display="block";
             console.log('Oof');
-            event.preventDefault();
             db.collection("Contacts").add({
                     full_name: full_name.value,
                     email: emails.value,
@@ -45,7 +45,7 @@ returnToSender.addEventListener("click", () => {
                 .catch(function (error) {
                     console.error("Error adding document: ", error);
                 });
-    }
+    } 
 
 })
 
