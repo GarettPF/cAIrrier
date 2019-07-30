@@ -3,6 +3,10 @@ html {
     /* font-family: 'Source Sans Pro', sans-serif; */
 }
 
+body {
+  overflow-x: hidden;
+}
+
 nav ul a,
 nav .brand-logo {
   color: #444;
