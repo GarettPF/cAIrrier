@@ -74,8 +74,7 @@
 	Particle.prototype.draw = function() {
 		// Draw particle
 		this.ctx.beginPath();
-		this.ctx.fillStyle = this.particleColor;
-		this.ctx.globalAlpha = this.opacity;
+		this.ctx.fillStyle = "#32CD32"
 		this.ctx.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
 		this.ctx.fill();
 	};
@@ -86,7 +85,7 @@
 			density: 15000, // the lower the denser
 			netLineDistance: 200,
 			netLineColor: '#8B80F9',
-			particleColors: 'blue'
+			particleColors: '#32CD32'
 		};
 		this.canvas = parent.canvas;
 		this.ctx = parent.ctx;
