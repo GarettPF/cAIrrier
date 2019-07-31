@@ -15,6 +15,7 @@ body {
     height: auto;
     box-sizing: border-box;
     position: relative;
+    top: 10vh;
     width:300px;
   }
   .col.s6 > .btn {

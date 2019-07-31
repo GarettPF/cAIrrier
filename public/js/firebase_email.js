@@ -25,23 +25,27 @@ firebase.initializeApp(firebaseConfig);
 
 var db = firebase.firestore();
 
-returnToSender.addEventListener("click", () => {
-    displayForm.style.display = "none";
-    ThankYouForm.style.display="block";
-    console.log('Oof');
-    event.preventDefault();
-    db.collection("Contacts").add({
-            full_name: full_name.value,
-            email: emails.value,
-            organization: organization.value,
-        })
-        .then(function (docRef) {
-            console.log("Document written with ID: ", docRef.id);
+returnToSender.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (full_name.value != '' &&
+        emails.value != '' &&
+        organization.value != '') {
             displayForm.style.display = "none";
-        })
-        .catch(function (error) {
-            console.error("Error adding document: ", error);
-        });
+            ThankYouForm.style.display="block";
+            console.log('Oof');
+            db.collection("Contacts").add({
+                    full_name: full_name.value,
+                    email: emails.value,
+                    organization: organization.value,
+                })
+                .then(function (docRef) {
+                    console.log("Document written with ID: ", docRef.id);
+                    displayForm.style.display = "none";
+                })
+                .catch(function (error) {
+                    console.error("Error adding document: ", error);
+                });
+    } 
 
 })
 
