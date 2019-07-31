@@ -107,3 +107,116 @@
 [debug] [2019-07-30T01:35:22.404Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
 [warn] ⚠  The Cloud Functions emulator requires the module "firebase-admin" to be installed. This package is in your package.json, but it's not available. You probably need to run "npm install" in your functions directory.
 [info] i  functions: Your functions could not be parsed due to an issue with your node_modules (see above)
+[debug] [2019-07-30T01:39:12.768Z] ----------------------------------------------------------------------
+[debug] [2019-07-30T01:39:12.773Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2019-07-30T01:39:12.773Z] CLI Version:   7.2.1
+[debug] [2019-07-30T01:39:12.773Z] Platform:      darwin
+[debug] [2019-07-30T01:39:12.774Z] Node Version:  v12.7.0
+[debug] [2019-07-30T01:39:12.776Z] Time:          Mon Jul 29 2019 15:39:12 GMT-1000 (Hawaii-Aleutian Standard Time)
+[debug] [2019-07-30T01:39:12.776Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-07-30T01:39:12.798Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-07-30T01:39:12.798Z] > authorizing via signed-in user
+[debug] [2019-07-30T01:39:12.799Z] [iam] checking project cairrier for permissions ["firebase.projects.get"]
+[debug] [2019-07-30T01:39:12.802Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/cairrier:testIamPermissions  
+
+[debug] [2019-07-30T01:39:13.461Z] <<< HTTP RESPONSE 200
+[debug] [2019-07-30T01:39:13.466Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/cairrier  
+ 
+[debug] [2019-07-30T01:39:13.859Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/jeraldycascayan/Desktop/cAIrrier'...
+[info] 
+[debug] [2019-07-30T01:39:13.866Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/cairrier/webApps/-/config  
+ 
+[warn] ⚠  Your requested "node" version "8" doesn't match your global version "12"
+[debug] [2019-07-30T01:39:13.885Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/cairrier/adminSdkConfig  
+ 
+[debug] [2019-07-30T01:39:14.220Z] <<< HTTP RESPONSE 200
+[debug] [2019-07-30T01:39:14.274Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+[info] ✔  functions: Emulator started at http://localhost:5001
+[info] i  functions: Watching "/Users/jeraldycascayan/Desktop/cAIrrier/functions" for Cloud Functions...
+[debug] [2019-07-30T01:39:14.780Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/jeraldycascayan/Desktop/cAIrrier/functions","node_version":"12.7.0"}
+[debug] [2019-07-30T01:39:14.781Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[warn] ⚠  The Cloud Functions emulator requires the module "firebase-admin" to be installed. This package is in your package.json, but it's not available. You probably need to run "npm install" in your functions directory.
+[info] i  functions: Your functions could not be parsed due to an issue with your node_modules (see above)
+[debug] [2019-07-30T02:33:11.153Z] ----------------------------------------------------------------------
+[debug] [2019-07-30T02:33:11.156Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2019-07-30T02:33:11.156Z] CLI Version:   7.2.1
+[debug] [2019-07-30T02:33:11.156Z] Platform:      darwin
+[debug] [2019-07-30T02:33:11.156Z] Node Version:  v12.7.0
+[debug] [2019-07-30T02:33:11.158Z] Time:          Mon Jul 29 2019 16:33:11 GMT-1000 (Hawaii-Aleutian Standard Time)
+[debug] [2019-07-30T02:33:11.158Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-07-30T02:33:11.178Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-07-30T02:33:11.178Z] > authorizing via signed-in user
+[debug] [2019-07-30T02:33:11.179Z] [iam] checking project cairrier for permissions ["firebase.projects.get"]
+[debug] [2019-07-30T02:33:11.181Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-07-30T02:33:11.182Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-07-30T02:33:11.636Z] <<< HTTP RESPONSE 200
+[debug] [2019-07-30T02:33:11.653Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/cairrier:testIamPermissions  
+
+[debug] [2019-07-30T02:33:12.065Z] <<< HTTP RESPONSE 200
+[debug] [2019-07-30T02:33:12.069Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/cairrier  
+ 
+[debug] [2019-07-30T02:33:12.534Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/jeraldycascayan/Desktop/cAIrrier'...
+[info] 
+[debug] [2019-07-30T02:33:12.544Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/cairrier/webApps/-/config  
+ 
+[warn] ⚠  Your requested "node" version "8" doesn't match your global version "12"
+[debug] [2019-07-30T02:33:12.591Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/cairrier/adminSdkConfig  
+ 
+[debug] [2019-07-30T02:33:12.950Z] <<< HTTP RESPONSE 200
+[debug] [2019-07-30T02:33:13.014Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+[info] ✔  functions: Emulator started at http://localhost:5001
+[info] i  functions: Watching "/Users/jeraldycascayan/Desktop/cAIrrier/functions" for Cloud Functions...
+[debug] [2019-07-30T02:33:13.753Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/jeraldycascayan/Desktop/cAIrrier/functions","node_version":"12.7.0"}
+[debug] [2019-07-30T02:33:13.753Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[warn] ⚠  The Cloud Functions emulator requires the module "firebase-admin" to be installed. This package is in your package.json, but it's not available. You probably need to run "npm install" in your functions directory.
+[info] i  functions: Your functions could not be parsed due to an issue with your node_modules (see above)
+[debug] [2019-07-30T17:54:33.767Z] ----------------------------------------------------------------------
+[debug] [2019-07-30T17:54:33.770Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2019-07-30T17:54:33.770Z] CLI Version:   7.2.1
+[debug] [2019-07-30T17:54:33.770Z] Platform:      darwin
+[debug] [2019-07-30T17:54:33.770Z] Node Version:  v12.7.0
+[debug] [2019-07-30T17:54:33.774Z] Time:          Tue Jul 30 2019 07:54:33 GMT-1000 (Hawaii-Aleutian Standard Time)
+[debug] [2019-07-30T17:54:33.774Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-07-30T17:54:33.791Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-07-30T17:54:33.791Z] > authorizing via signed-in user
+[debug] [2019-07-30T17:54:33.791Z] [iam] checking project cairrier for permissions ["firebase.projects.get"]
+[debug] [2019-07-30T17:54:33.793Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-07-30T17:54:33.793Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-07-30T17:54:34.153Z] <<< HTTP RESPONSE 200
+[debug] [2019-07-30T17:54:34.172Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/cairrier:testIamPermissions  
+
+[debug] [2019-07-30T17:54:35.585Z] <<< HTTP RESPONSE 200
+[debug] [2019-07-30T17:54:35.588Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/cairrier  
+ 
+[debug] [2019-07-30T17:54:36.591Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/jeraldycascayan/Desktop/cAIrrier'...
+[info] 
+[debug] [2019-07-30T17:54:36.598Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/cairrier/webApps/-/config  
+ 
+[warn] ⚠  Your requested "node" version "8" doesn't match your global version "12"
+[debug] [2019-07-30T17:54:36.618Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/cairrier/adminSdkConfig  
+ 
+[debug] [2019-07-30T17:54:36.904Z] <<< HTTP RESPONSE 200
+[debug] [2019-07-30T17:54:37.138Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+[info] ✔  functions: Emulator started at http://localhost:5001
+[info] i  functions: Watching "/Users/jeraldycascayan/Desktop/cAIrrier/functions" for Cloud Functions...
+[debug] [2019-07-30T17:54:37.461Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/jeraldycascayan/Desktop/cAIrrier/functions","node_version":"12.7.0"}
+[debug] [2019-07-30T17:54:37.462Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[warn] ⚠  The Cloud Functions emulator requires the module "firebase-admin" to be installed. This package is in your package.json, but it's not available. You probably need to run "npm install" in your functions directory.
+[info] i  functions: Your functions could not be parsed due to an issue with your node_modules (see above)

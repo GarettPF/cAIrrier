@@ -38,7 +38,7 @@
     position:absolute;
     width:100%;
     height:25%;
-    background-color:rgb(0,186,200);
+    background-color:rgb(0,186,200);;
 }
 
 #navRow {
@@ -116,7 +116,7 @@ nav .brand-logo {
 #colorHeadREAL {
     width:100%;
     height:180px;
-    background-color:rgb(0,186,200);
+    background-color:#ee6e73;
 }
 
 #closeBtn {
@@ -126,4 +126,82 @@ nav .brand-logo {
 .modal {
     max-height: 50%;
 }
+
+.topCard {
+    height:600px;
+}
+
+#content {
+    height:100%;
+}
+
+/* Chat containers */
+.container {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  
+  /* Darker chat container */
+  .darker {
+    border-color: #ccc;
+    background-color: #ddd;
+  }
+  
+  /* Clear floats */
+  .container::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Style images */
+  .container img {
+    float: left;
+    max-width: 60px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 50%;
+  }
+  
+  /* Style the right image */
+  .container img.right {
+    float: right;
+    margin-left: 20px;
+    margin-right:0;
+  }
+  
+  /* Style time text */
+  .time-right {
+    float: right;
+    color: #aaa;
+  }
+  
+  /* Style time text */
+  .time-left {
+    float: left;
+    color: #999;
+  }
+
+
+
+
+  #chatApplication {
+      overflow:auto;
+  }
+
+  #chatRow {
+      width:100%;
+      margin-left:0;
+      margin-right:auto;
+  }
+
+
+  h1 {
+      color:rgb(49, 130, 145);
+      font-weight:600;
+      margin-left:10px;
+  }
 
