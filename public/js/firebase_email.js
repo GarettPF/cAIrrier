@@ -32,7 +32,7 @@ returnToSender.addEventListener("click", (e) => {
         organization.value != '') {
             displayForm.style.display = "none";
             ThankYouForm.style.display="block";
-            console.log('Oof');
+            // console.log('Oof');
             db.collection("Contacts").add({
                     full_name: full_name.value,
                     email: emails.value,

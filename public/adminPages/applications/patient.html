@@ -7,6 +7,15 @@
 
 
 
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/6.3.3/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/6.3.3/firebase-auth.js"></script>
+    <script defer src="/__/firebase/6.3.3/firebase-database.js"></script>
+    <script defer src="/__/firebase/6.3.3/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/6.3.3/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
 
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -14,7 +23,6 @@
     <link type="text/css" rel="stylesheet" href="../../style/materialize.css" media="screen,projection" />
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js" />
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
@@ -74,7 +82,7 @@
                         <div class="nav-wrapper">
                             <form>
                                 <div class="input-field">
-                                    <input type="search" style="background-color: #008080">
+                                    <input type="search" style="background-color: #00000000">
                                     <label class="label-icon" for="search"><i class="material-icons">search</i></label>
                                     <i class="material-icons">close</i>
                                 </div>
@@ -94,15 +102,15 @@
 
 
             <div class="row">
-                <div class="col-sm-2"></div>
-                <div class="col-sm-10">
+                <div class="col-sm-8" id="patientList">
+                    <br>
                     <div class="animated fadeInLeft card darken-1">
                         <div class="row" style="margin: 0.25rem">
-                            <h3 class="col-sm-8">Garett Pascual-Folster</h3>
-                            
+                            <h5 class="col-sm-8">Garett Pascual-Folster</h5>
                         </div>
                     </div>
                 </div>
+                <div class="col-sm-4"></div>
             </div>
 
 
@@ -131,7 +139,9 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
 
-    <script src="../../js/adminPage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase-firestore.js"></script>
+    <script src="/js/patient.js"></script>
 </body>
 
 </html>
