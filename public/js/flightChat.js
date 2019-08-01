@@ -72,7 +72,7 @@ function waitForPing() {
         });
 
         ;
-    }, 10000);
+    }, 5000);
     //millisends
 }
 
@@ -114,9 +114,20 @@ buttonSend.addEventListener('click', () => {
 
 
     msgValue.value = '';
-    waitForPing();
 
 })
 
 
 //flightchase Version 0.01A.
+
+
+function setTimerPing() {
+    //cron job
+
+    console.log('this will execute for every 5 seconds')
+    waitForPing(); //pings to API, see if there's new update happening
+
+    setTimeout(setTimerPing, 5000);
+}
+
+setTimerPing();

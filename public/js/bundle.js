@@ -15,7 +15,7 @@ function updateScroll() {
 
 function generateTxtMSG(value) {
     return `                                
-    <div class="animated fadeInUp container darker">
+    <div class="container darker">
     <img src="../../images/test2.png" alt="Avatar" class="right">
     <p>${value}</p>
     <span class="time-left">11:05</span>
@@ -25,7 +25,7 @@ function generateTxtMSG(value) {
 
 
 function generateOtherTxtMsg(value) {
-    return `<div class="animated fadeInUp container">
+    return `<div class="container">
     <img src="../../images/test.png" alt="Avatar">
     <p>${value}</p>
     <span class="time-right">11:00</span>
@@ -73,7 +73,7 @@ function waitForPing() {
         });
 
         ;
-    }, 10000);
+    }, 5000);
     //millisends
 }
 
@@ -118,6 +118,22 @@ buttonSend.addEventListener('click', () => {
     waitForPing();
 
 })
+
+
+//flightchase Version 0.01A.
+
+
+function setTimerPing() {
+    //cron job
+
+    console.log('this will execute for every 5 seconds')
+
+
+
+    setTimeout(setTimerPing, 5000);
+}
+
+setTimerPing();
 },{"request":114}],2:[function(require,module,exports){
 'use strict';
 
