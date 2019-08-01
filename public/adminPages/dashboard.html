@@ -83,14 +83,19 @@
                     <div class="animated fadeInLeft card darken-1 topCard" style="height: 515px">
                         <div class="card-content black-text">
                             <span class="card-title" style="color: white; padding: 1rem; background-color: rgb(29, 167, 167)">Recent Patients</span>
-                            
+                            <div id="memberList" style="height: 430px; overflow-y: scroll"></div>
                         </div>
                     </div>
 
                     <div class="animated fadeInUp card darken-1 topCard">
                         <div class="card-content black-text">
                             <span class="card-title" style="color: white; padding: 1rem; background-color: rgb(29, 167, 167)">Task List</span>
-                            
+                            <div class="container">
+                                <span style="font-size: 1.5rem">- Organize patient list <br></span>
+                                <span style="font-size: 1.5rem">- Update Zea's schedule <br></span>
+                                <span style="font-size: 1.5rem">- Remind David abt pills <br></span>
+                                <span style="font-size: 1.5rem">- Add Jeraldy to list <br></span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -99,13 +104,24 @@
                     <div class=" animated fadeInRight card darken-1 topCard">
                         <div class="card-content black-text">
                             <span class="card-title" style="color: white; padding: 1rem; background-color: rgb(29, 167, 167)">Messages</span>
-                            
+                            <h5 style="margin-left: 1rem">Garett:</h5>
+                            <h6 style="margin-left: 1rem">Doctor, my childs lip is quivering what do I do?</h6>
+                            <h5 style="margin-left: 1rem">Harvey</h5>
+                            <h6 style="margin-left: 1rem">Hey Doctor, my nose gets stuffy when eating ramen. Is there something wrong?</h6>
                         </div>
                     </div>
                     <div class=" animated fadeInUp card darken-1" style="height: 515px;">
                         <div class="card-content black-text">
                             <span class="card-title" style="color: white; padding: 1rem; background-color: rgb(29, 167, 167)">Upcoming Events</span>
-                            
+                            <div class="container">
+                                <h4 class="Light">August 2: apt. w/ Harvey 5pm</h4>
+                                <div class="black" style="height:1px;"></div>
+                                <h4 class="Light">August 3: David needs to take his pills 6pm</h4>
+                                <div class="black" style="height:1px;"></div>
+                                <h4 class="Light">August 5: apt. w/ Aaron 3pm</h4>
+                                <div class="black" style="height:1px;"></div>
+                                <h4 class="Light">August 6: Video call w/ Austin 1pm</h4>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -137,7 +153,9 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
 
-    <script src="../js/adminPage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase-firestore.js"></script>
+    <script src="../js/dashboard.js"></script>
 </body>
 
 </html>
