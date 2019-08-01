@@ -38,7 +38,7 @@
                             <div class="background">
                             </div>
                             <a href="../dashboard.html"><img class="circle" src="/images/cAIrrierLogoTrans.png"></a>
-                <a href=" #name"><span class="name">Welcome to cAIrrier</span></a>
+                            <a href=" #name"><span class="name">Welcome to cAIrrier</span></a>
                             <a href="#email"><span class="email">cAIrrier@gmail.com</span></a>
                         </div>
                     </li>
@@ -94,9 +94,10 @@
 
 
 
-            <div id="topRow" class="row">
-                <div class="container">
+            <div id="topRow" class="row" style="position: relative; top: 2rem">
+                <div class="container" style="margin-top: 2rem">
                     <div class="Light">View Chat Threads</div>
+                    <div id="patientList"></div>
                 </div>
 
                 <div class="col-sm-12">
@@ -135,7 +136,9 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
 
-    <script src="../../js/adminPage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase-firestore.js"></script>
+    <script src="../../js/patient.js"></script>
 </body>
 
 </html>
