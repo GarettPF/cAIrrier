@@ -48,6 +48,8 @@ buttonSend.addEventListener('click', ()=>  {
     msgContainer.innerHTML+= generateTxtMSG(msgValue.value);
     request(generateAPI(msgValue.value));
 
+    msgValue.value = '';
+
     updateScroll();
 
 })
