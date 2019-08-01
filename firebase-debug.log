@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [debug] [2019-07-31T22:50:23.985Z] ----------------------------------------------------------------------
 [debug] [2019-07-31T22:50:23.990Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve --host 10.150.93.41
 [debug] [2019-07-31T22:50:23.990Z] CLI Version:   7.2.1
@@ -110,3 +111,18 @@
 [debug] [2019-07-31T23:25:20.604Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/Users/garettpascual-folster/Desktop/cAIrrier/functions/node_modules/firebase-admin/lib/index.js"}
 [debug] [2019-07-31T23:25:20.605Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/garettpascual-folster/Desktop/cAIrrier/functions/node_modules/firebase-functions/lib/index.js"}
 [debug] [2019-07-31T23:25:20.606Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/garettpascual-folster/Desktop/cAIrrier/functions/node_modules/firebase-functions/lib/index.js"}
+=======
+[debug] [2019-07-31T21:57:30.755Z] ----------------------------------------------------------------------
+[debug] [2019-07-31T21:57:30.757Z] Command:       /usr/local/bin/node /usr/local/bin/firebase functions:config:set twilio.sid=AC49e102719065ef4f9434960a7ab24ddb twilio.token=f3becea26411a3052e3f9394fb8b5428ls
+[debug] [2019-07-31T21:57:30.757Z] CLI Version:   7.2.1
+[debug] [2019-07-31T21:57:30.757Z] Platform:      darwin
+[debug] [2019-07-31T21:57:30.757Z] Node Version:  v12.7.0
+[debug] [2019-07-31T21:57:30.758Z] Time:          Wed Jul 31 2019 11:57:30 GMT-1000 (Hawaii-Aleutian Standard Time)
+[debug] [2019-07-31T21:57:30.758Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-07-31T21:57:30.765Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-07-31T21:57:30.766Z] > authorizing via signed-in user
+[debug] [2019-07-31T21:57:30.766Z] [iam] checking project cairrier for permissions ["firebase.projects.get","runtimeconfig.configs.create","runtimeconfig.configs.delete","runtimeconfig.configs.get","runtimeconfig.configs.list","runtimeconfig.configs.update","runtimeconfig.variables.create","runtimeconfig.variables.delete","runtimeconfig.variables.get","runtimeconfig.variables.list","runtimeconfig.variables.update"]
+[debug] [2019-07-31T21:57:30.768Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/cairrier:testIamPermissions  
+
+>>>>>>> 175f9dd219bbb025a81611626f5ecd2a36d2dbc4
