@@ -21,6 +21,49 @@ function generateTxtMSG(value) {
     </div>`
     
 }
+
+
+
+
+//this will auto send messages on platforms.
+
+
+//integrating 
+
+/*
+
+
+
+*/
+
+
+var apiLink = 'https://api.twilio.com/2010-04-01/Accounts/AC49e102719065ef4f9434960a7ab24ddb/Messages.json'
+function waitForPing() {
+
+    console.log('test');
+    //auto calls JSON every 5 seconds. or everytime you click? ma
+        setTimeout(function(){ 
+            
+            
+            request({
+                url: apiLink,
+                json: true
+              }, function(error, response, body) {
+                console.log(body);
+              });
+            
+            ; }, 1000);
+        //millisends
+}
+
+
+
+
+
+
+
+
+
 function generateAPI(msg) {
     return {
         url: 'https://api.twilio.com/2010-04-01/Accounts/AC49e102719065ef4f9434960a7ab24ddb/Messages.json',
@@ -43,10 +86,10 @@ let chat_container = document.querySelector('#chatContainer');
 
 
 buttonSend.addEventListener('click', ()=>  {
-    console.log();
+    console.log('test');
     msgContainer.innerHTML+= generateTxtMSG(msgValue.value);
-    request(generateAPI(msgValue.value));
-
+    //request(generateAPI(msgValue.value));
+    waitForPing()
     updateScroll();
 
 })
