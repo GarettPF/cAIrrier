@@ -18,7 +18,11 @@ var db = firebase.firestore();
 
 function addPatient(name) {
     return `
-        <h5 class="Light" style="padding: 1rem">${name}</h5>
+    <div class="row valign-wrapper">
+        <span><i style="font-size: 2rem" class="material-icons col-sm-2">face</i></span>
+        <h5 class="Light valign-wrapper col-sm-9" style="padding: 0rem">${name}</h5>
+    </div>
+    <div class="black" style="height:1px;"></div>
     `;
 }
 
