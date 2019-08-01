@@ -3,7 +3,8 @@ html {
     /* font-family: 'Source Sans Pro', sans-serif; */
 }
 
-body {
+html, body {
+  width: 100vw;
   overflow-x: hidden;
 }
 
