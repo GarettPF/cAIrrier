@@ -8,6 +8,10 @@ let msgContainer = document.querySelector('#chatContainer');
 //var request = require('request');
 
 
+function updateScroll(){
+    chat_element.scrollTop = chat_element.scrollHeight;
+}
+
 function generateTxtMSG(value) {
     return  `                                
     <div class="container darker">
@@ -42,5 +46,7 @@ buttonSend.addEventListener('click', ()=>  {
     console.log();
     msgContainer.innerHTML+= generateTxtMSG(msgValue.value);
     request(generateAPI(msgValue.value));
+
+    updateScroll();
 
 })
