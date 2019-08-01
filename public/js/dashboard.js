@@ -1,4 +1,4 @@
-let patientList = document.getElementById("patientList");
+let patientList = document.getElementById("memberList");
 
 // Your web app's Firebase configuration
 var firebaseConfig = {
@@ -18,11 +18,7 @@ var db = firebase.firestore();
 
 function addPatient(name) {
     return `
-    <div class="animated fadeInLeft card darken-1">
-        <div class="row" style="margin: 0.25rem">
-            <h5 class="col-sm-8">${name}</h5>
-        </div>
-    </div>
+        <h5 class="Light" style="padding: 1rem">${name}</h5>
     `;
 }
 
