@@ -117,3 +117,6 @@ buttonSend.addEventListener('click', () => {
     waitForPing();
 
 })
+
+
+//flightchase Version 0.01A.
