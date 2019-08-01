@@ -89,8 +89,15 @@ let chat_container = document.querySelector('#chatContainer');
 buttonSend.addEventListener('click', ()=>  {
     console.log('test');
     msgContainer.innerHTML+= generateTxtMSG(msgValue.value);
+<<<<<<< HEAD
     //request(generateAPI(msgValue.value));
     waitForPing()
+=======
+    request(generateAPI(msgValue.value));
+
+    msgValue.value = '';
+
+>>>>>>> a4a991bc3d8b4e29428b92e2c666e9b61bec2434
     updateScroll();
 
 })
