@@ -2,10 +2,16 @@
 <html>
 
 <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+
+
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="../style/materialize.css"/>
+    <link rel="stylesheet" href="../style/materialize.css">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js" />
@@ -19,7 +25,6 @@
 
 <body>
 
-
     <div id="container">
         <div id="slideing">
             <ul id="slide-out" class="sideWith sidenav sidenav-fixed">
@@ -28,23 +33,21 @@
                         <div class="user-view">
                             <div class="background">
                             </div>
-                            <a href="../homePage2.html"><img class="circle" src="../images/cAIrrierLogoTrans.png"></a>
-                            <a href="dashboard.html"><span class="name">Welcome to cAIrrier</span></a>
+                            <a href="dashboard.html"><img class="circle" src="../images/cAIrrierLogoTrans.png"></a>
+                <a href=" #name"><span class="name">Welcome to cAIrrier</span></a>
                             <a href="#email"><span class="email">cAIrrier@gmail.com</span></a>
                         </div>
                     </li>
-                    <div class="divider"></div>
-                    <li class="active">
-                        <a href="./dashboard.html"><i class="material-icons">dashboard</i>Dashboard</a>
+                    <li class="active"><a href="../dashboard.html"><i class="material-icons">dashboard</i>dashboard</a>
                     </li>
                     <li>
                         <div class="divider"></div>
                     </li>
                     <li><a class="subheader">Applications</a></li>
-                    <li><a href="./applications/toDo.html"><i class="material-icons">face</i>Patients</a></li>
-                    <li><a href="./applications/mail.html"><i class="material-icons">email</i>Messages</a></li>
-                    <li><a href="./applications/mail.html"><i class="material-icons">archive</i>Past Replies</a></li>
-                    <li><a href="./applications/mail.html"><i class="material-icons">assessment</i>Diagnostics</a></li>
+                    <li><a href="applications/patient.html"><i class="material-icons">face</i>Patients</a></li>
+                    <li><a href="applications/chat.html"><i class="material-icons">email</i>Messages</a></li>
+                    <li><a href="applications/replies.html"><i class="material-icons">archive</i>Past Replies</a></li>
+                    <li><a href="applications/diagnostics.html"><i class="material-icons">assessment</i>Diagnostics</a></li>
                     <li>
                         <div class="divider"></div>
                     </li>
@@ -54,26 +57,67 @@
             </ul>
         </div>
 
-        <div id="cont">
-            <div class="row teal" style="margin: 0;">
-                <div class="col s10">
-                    <div>
-                        <img src="../images/NavTrans.png" class="responsive-img">
+
+        <div id="colorHeader">
+        </div>
+        <div id="content" class="container">
+
+            <div id="navRow" class="row">
+                <div class="col-sm-10">
+                    <img src="../images/NavTrans.png" class="responsive-img">
+                </div>
+                <div id="icons" class="col-md-2">
+                    <a href=""><label class="label-icon"><i
+                                class="clickable material-icons icon-white">fullscreen</i></label></a>
+                    <label class="label-icon"><i
+                            class="clickable material-icons icon-white">notifications_none</i></label>
+                    <a href=""><label class="label-icon"><i
+                                class="clickable material-icons icon-white">settings</i></label></a>
+                </div>
+            </div>
+
+
+
+            <div id="topRow" class="row">
+                <div class="col-sm-5">
+                    <div class="animated fadeInLeft card darken-1 topCard">
+                        <div class="card-content black-text">
+                            <span class="card-title" style="color: white; padding: 1rem; background-color: teal">Recent Patients</span>
+                            <div id="linePlot" class="ct-chart .ct-perfect-fifth"></div>
+                        </div>
+                    </div>
+
+                    <div class="animated fadeInUp card darken-1 topCard">
+                        <div class="card-content black-text">
+                            <span class="card-title" style="color: white; padding: 1rem; background-color: teal">Upcoming Events</span>
+                            <div id="linePlot" class="ct-chart .ct-perfect-fifth"></div>
+                        </div>
+                    </div>
+
+                    <div class="animated fadeInUp card darken-1 topCard">
+                        <div class="card-content black-text">
+                            <span class="card-title" style="color: white; padding: 1rem; background-color: teal">Task List</span>
+                            <div id="linePlot" class="ct-chart .ct-perfect-fifth"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-7">
+                    <div class=" animated fadeInRight card darken-1 fullCard">
+                        <div class="card-content black-text">
+                            <span class="card-title" style="color: white; padding: 1rem; background-color: teal">Messages</span>
+                            <div id="compBar" class="ct-chart .ct-major-seventh "></div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            
-
-
-
-
         </div>
+
+
+    </div>
     </div>
 
-
-
-    
 
 
 

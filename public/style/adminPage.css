@@ -16,6 +16,14 @@
     width: 20%;
 }
 
+.card-content {
+    padding: 0 !important;
+}
+
+.card {
+    border: 0px !important;
+}
+
 #slideing {
     width: 20%;
 }
@@ -94,6 +102,10 @@ nav .brand-logo {
 
 .topCard {
     height:250px;
+}
+
+.fullCard {
+    height: 780px;
 }
 
 #midRow {
