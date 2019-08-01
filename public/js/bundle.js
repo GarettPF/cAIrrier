@@ -15,7 +15,7 @@ function updateScroll() {
 
 function generateTxtMSG(value) {
     return `                                
-    <div class="container darker">
+    <div class="animated fadeInUp container darker">
     <img src="../../images/test2.png" alt="Avatar" class="right">
     <p>${value}</p>
     <span class="time-left">11:05</span>
@@ -25,7 +25,7 @@ function generateTxtMSG(value) {
 
 
 function generateOtherTxtMsg(value) {
-    return `<div class="container">
+    return `<div class="animated fadeInUp container">
     <img src="../../images/test.png" alt="Avatar">
     <p>${value}</p>
     <span class="time-right">11:00</span>
@@ -67,9 +67,9 @@ function waitForPing() {
             json: true
         }, function (error, response, body) {
             //generateOtherTxtMsg(body.messages[0])
-            console.log(body.messages[1].body)
+            console.log(body.messages[0].body)
 
-            msgContainer.innerHTML += generateOtherTxtMsg(body.messages[1].body);
+            msgContainer.innerHTML += generateOtherTxtMsg(body.messages[0].body);
         });
 
         ;

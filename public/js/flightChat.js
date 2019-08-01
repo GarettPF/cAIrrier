@@ -66,9 +66,9 @@ function waitForPing() {
             json: true
         }, function (error, response, body) {
             //generateOtherTxtMsg(body.messages[0])
-            console.log(body.messages[1].body)
+            console.log(body.messages[0].body)
 
-            msgContainer.innerHTML += generateOtherTxtMsg(body.messages[1].body);
+            msgContainer.innerHTML += generateOtherTxtMsg(body.messages[0].body);
         });
 
         ;
