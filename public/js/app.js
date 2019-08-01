@@ -30,3 +30,6 @@ function callback(error, response, body) {
 btn.addEventListener("click", () => {
     request(generateAPI(txtVal.value), callback);
         })
+
+
+        
