@@ -1,53 +1,115 @@
-[debug] [2019-07-31T21:57:30.755Z] ----------------------------------------------------------------------
-[debug] [2019-07-31T21:57:30.757Z] Command:       /usr/local/bin/node /usr/local/bin/firebase functions:config:set twilio.sid=AC49e102719065ef4f9434960a7ab24ddb twilio.token=f3becea26411a3052e3f9394fb8b5428ls
-[debug] [2019-07-31T21:57:30.757Z] CLI Version:   7.2.1
-[debug] [2019-07-31T21:57:30.757Z] Platform:      darwin
-[debug] [2019-07-31T21:57:30.757Z] Node Version:  v12.7.0
-[debug] [2019-07-31T21:57:30.758Z] Time:          Wed Jul 31 2019 11:57:30 GMT-1000 (Hawaii-Aleutian Standard Time)
-[debug] [2019-07-31T21:57:30.758Z] ----------------------------------------------------------------------
+[debug] [2019-08-01T02:15:08.678Z] ----------------------------------------------------------------------
+[debug] [2019-08-01T02:15:08.680Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2019-08-01T02:15:08.681Z] CLI Version:   7.2.1
+[debug] [2019-08-01T02:15:08.681Z] Platform:      darwin
+[debug] [2019-08-01T02:15:08.681Z] Node Version:  v10.16.0
+[debug] [2019-08-01T02:15:08.682Z] Time:          Wed Jul 31 2019 16:15:08 GMT-1000 (Hawaii-Aleutian Standard Time)
+[debug] [2019-08-01T02:15:08.682Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2019-07-31T21:57:30.765Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2019-07-31T21:57:30.766Z] > authorizing via signed-in user
-[debug] [2019-07-31T21:57:30.766Z] [iam] checking project cairrier for permissions ["firebase.projects.get","runtimeconfig.configs.create","runtimeconfig.configs.delete","runtimeconfig.configs.get","runtimeconfig.configs.list","runtimeconfig.configs.update","runtimeconfig.variables.create","runtimeconfig.variables.delete","runtimeconfig.variables.get","runtimeconfig.variables.list","runtimeconfig.variables.update"]
-[debug] [2019-07-31T21:57:30.768Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/cairrier:testIamPermissions  
-
-[debug] [2019-08-01T00:09:44.545Z] ----------------------------------------------------------------------
-[debug] [2019-08-01T00:09:44.547Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
-[debug] [2019-08-01T00:09:44.547Z] CLI Version:   7.2.1
-[debug] [2019-08-01T00:09:44.547Z] Platform:      darwin
-[debug] [2019-08-01T00:09:44.547Z] Node Version:  v12.7.0
-[debug] [2019-08-01T00:09:44.548Z] Time:          Wed Jul 31 2019 14:09:44 GMT-1000 (Hawaii-Aleutian Standard Time)
-[debug] [2019-08-01T00:09:44.548Z] ----------------------------------------------------------------------
-[debug] 
-[debug] [2019-08-01T00:09:44.555Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2019-08-01T00:09:44.555Z] > authorizing via signed-in user
-[debug] [2019-08-01T00:09:44.555Z] [iam] checking project cairrier for permissions ["firebase.projects.get"]
-[debug] [2019-08-01T00:09:44.557Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2019-08-01T00:09:44.557Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+[debug] [2019-08-01T02:15:08.696Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-08-01T02:15:08.696Z] > authorizing via signed-in user
+[debug] [2019-08-01T02:15:08.697Z] [iam] checking project cairrier for permissions ["firebase.projects.get"]
+[debug] [2019-08-01T02:15:08.699Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-08-01T02:15:08.699Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
  <request body omitted>
-[debug] [2019-08-01T00:09:45.094Z] <<< HTTP RESPONSE 200
-[debug] [2019-08-01T00:09:45.109Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/cairrier:testIamPermissions  
+[debug] [2019-08-01T02:15:09.350Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-01T02:15:09.373Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/cairrier:testIamPermissions  
 
-[debug] [2019-08-01T00:09:45.687Z] <<< HTTP RESPONSE 200
-[debug] [2019-08-01T00:09:45.691Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/cairrier  
+[debug] [2019-08-01T02:15:19.493Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-01T02:15:19.495Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/cairrier  
  
-[debug] [2019-08-01T00:09:46.181Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-01T02:15:34.953Z] Error: getaddrinfo ENOTFOUND firebase.googleapis.com firebase.googleapis.com:443
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:56:26)
+[error] 
+[error] Error: Server Error. getaddrinfo ENOTFOUND firebase.googleapis.com firebase.googleapis.com:443
+[debug] [2019-08-01T02:15:57.483Z] ----------------------------------------------------------------------
+[debug] [2019-08-01T02:15:57.485Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2019-08-01T02:15:57.485Z] CLI Version:   7.2.1
+[debug] [2019-08-01T02:15:57.485Z] Platform:      darwin
+[debug] [2019-08-01T02:15:57.485Z] Node Version:  v10.16.0
+[debug] [2019-08-01T02:15:57.486Z] Time:          Wed Jul 31 2019 16:15:57 GMT-1000 (Hawaii-Aleutian Standard Time)
+[debug] [2019-08-01T02:15:57.486Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-08-01T02:15:57.494Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-08-01T02:15:57.495Z] > authorizing via signed-in user
+[debug] [2019-08-01T02:15:57.495Z] [iam] checking project cairrier for permissions ["firebase.projects.get"]
+[debug] [2019-08-01T02:15:57.497Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/cairrier:testIamPermissions  
+
+[debug] [2019-08-01T02:15:57.543Z] Error: getaddrinfo ENOTFOUND cloudresourcemanager.googleapis.com cloudresourcemanager.googleapis.com:443
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:56:26)
+[error] 
+[error] Error: Server Error. getaddrinfo ENOTFOUND cloudresourcemanager.googleapis.com cloudresourcemanager.googleapis.com:443
+[debug] [2019-08-01T02:16:41.649Z] ----------------------------------------------------------------------
+[debug] [2019-08-01T02:16:41.652Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2019-08-01T02:16:41.652Z] CLI Version:   7.2.1
+[debug] [2019-08-01T02:16:41.652Z] Platform:      darwin
+[debug] [2019-08-01T02:16:41.653Z] Node Version:  v10.16.0
+[debug] [2019-08-01T02:16:41.653Z] Time:          Wed Jul 31 2019 16:16:41 GMT-1000 (Hawaii-Aleutian Standard Time)
+[debug] [2019-08-01T02:16:41.653Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-08-01T02:16:41.661Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-08-01T02:16:41.662Z] > authorizing via signed-in user
+[debug] [2019-08-01T02:16:41.662Z] [iam] checking project cairrier for permissions ["firebase.projects.get"]
+[debug] [2019-08-01T02:16:41.664Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/cairrier:testIamPermissions  
+
+[debug] [2019-08-01T02:16:41.715Z] Error: getaddrinfo ENOTFOUND cloudresourcemanager.googleapis.com cloudresourcemanager.googleapis.com:443
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:56:26)
+[error] 
+[error] Error: Server Error. getaddrinfo ENOTFOUND cloudresourcemanager.googleapis.com cloudresourcemanager.googleapis.com:443
+[debug] [2019-08-01T02:17:57.821Z] ----------------------------------------------------------------------
+[debug] [2019-08-01T02:17:57.823Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve --host 127.0.0.1
+[debug] [2019-08-01T02:17:57.823Z] CLI Version:   7.2.1
+[debug] [2019-08-01T02:17:57.823Z] Platform:      darwin
+[debug] [2019-08-01T02:17:57.823Z] Node Version:  v10.16.0
+[debug] [2019-08-01T02:17:57.824Z] Time:          Wed Jul 31 2019 16:17:57 GMT-1000 (Hawaii-Aleutian Standard Time)
+[debug] [2019-08-01T02:17:57.824Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-08-01T02:17:57.832Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-08-01T02:17:57.832Z] > authorizing via signed-in user
+[debug] [2019-08-01T02:17:57.832Z] [iam] checking project cairrier for permissions ["firebase.projects.get"]
+[debug] [2019-08-01T02:17:57.834Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/cairrier:testIamPermissions  
+
+[debug] [2019-08-01T02:17:57.878Z] Error: getaddrinfo ENOTFOUND cloudresourcemanager.googleapis.com cloudresourcemanager.googleapis.com:443
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:56:26)
+[error] 
+[error] Error: Server Error. getaddrinfo ENOTFOUND cloudresourcemanager.googleapis.com cloudresourcemanager.googleapis.com:443
+[debug] [2019-08-01T03:07:38.958Z] ----------------------------------------------------------------------
+[debug] [2019-08-01T03:07:38.961Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2019-08-01T03:07:38.961Z] CLI Version:   7.2.1
+[debug] [2019-08-01T03:07:38.961Z] Platform:      darwin
+[debug] [2019-08-01T03:07:38.962Z] Node Version:  v10.16.0
+[debug] [2019-08-01T03:07:38.962Z] Time:          Wed Jul 31 2019 17:07:38 GMT-1000 (Hawaii-Aleutian Standard Time)
+[debug] [2019-08-01T03:07:38.962Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-08-01T03:07:38.972Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-08-01T03:07:38.973Z] > authorizing via signed-in user
+[debug] [2019-08-01T03:07:38.974Z] [iam] checking project cairrier for permissions ["firebase.projects.get"]
+[debug] [2019-08-01T03:07:38.977Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-08-01T03:07:38.977Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-08-01T03:07:39.491Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-01T03:07:39.510Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/cairrier:testIamPermissions  
+
+[debug] [2019-08-01T03:07:40.020Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-01T03:07:40.023Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/cairrier  
+ 
+[debug] [2019-08-01T03:07:40.589Z] <<< HTTP RESPONSE 200
 [info] 
-[info] === Serving from '/Users/jeraldycascayan/Desktop/cAIrrier'...
+[info] === Serving from '/Users/garettpascual-folster/Desktop/cAIrrier'...
 [info] 
-[debug] [2019-08-01T00:09:46.187Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/cairrier/webApps/-/config  
+[debug] [2019-08-01T03:07:40.598Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/cairrier/webApps/-/config  
  
-[warn] ⚠  Your requested "node" version "8" doesn't match your global version "12"
-[debug] [2019-08-01T00:09:46.203Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/cairrier/adminSdkConfig  
+[warn] ⚠  Your requested "node" version "8" doesn't match your global version "10"
+[debug] [2019-08-01T03:07:40.617Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/cairrier/adminSdkConfig  
  
-[debug] [2019-08-01T00:09:46.531Z] <<< HTTP RESPONSE 200
-[debug] [2019-08-01T00:09:46.606Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-01T03:07:40.939Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-01T03:07:41.096Z] <<< HTTP RESPONSE 200
 [info] i  hosting: Serving hosting files from: public
 [info] ✔  hosting: Local server: http://localhost:5000
 [info] ✔  functions: Emulator started at http://localhost:5001
-[info] i  functions: Watching "/Users/jeraldycascayan/Desktop/cAIrrier/functions" for Cloud Functions...
-[debug] [2019-08-01T00:09:47.086Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/jeraldycascayan/Desktop/cAIrrier/functions","node_version":"12.7.0"}
-[debug] [2019-08-01T00:09:47.086Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
-[debug] [2019-08-01T00:09:47.092Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/Users/jeraldycascayan/Desktop/cAIrrier/functions/node_modules/firebase-admin/lib/index.js"}
-[debug] [2019-08-01T00:09:47.095Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jeraldycascayan/Desktop/cAIrrier/functions/node_modules/firebase-functions/lib/index.js"}
-[debug] [2019-08-01T00:09:47.096Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jeraldycascayan/Desktop/cAIrrier/functions/node_modules/firebase-functions/lib/index.js"}
+[info] i  functions: Watching "/Users/garettpascual-folster/Desktop/cAIrrier/functions" for Cloud Functions...
+[debug] [2019-08-01T03:07:41.535Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/garettpascual-folster/Desktop/cAIrrier/functions","node_version":"10.16.0"}
+[debug] [2019-08-01T03:07:41.535Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-01T03:07:41.542Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"/Users/garettpascual-folster/Desktop/cAIrrier/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-08-01T03:07:41.548Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/garettpascual-folster/Desktop/cAIrrier/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-08-01T03:07:41.549Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/garettpascual-folster/Desktop/cAIrrier/functions/node_modules/firebase-functions/lib/index.js"}
