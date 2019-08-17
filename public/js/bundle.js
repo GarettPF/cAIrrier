@@ -68,8 +68,15 @@ function waitForPing() {
         }, function (error, response, body) {
             //generateOtherTxtMsg(body.messages[0])
             console.log(body.messages[0].body)
+            var temp = [ ];
+            temp.push(body.messages[0].body)
+            console.log(temp)
 
-            msgContainer.innerHTML += generateOtherTxtMsg(body.messages[0].body);
+            if (body.messages[0].body === temp[temp.length-1]) {
+                console.log('same message');
+            } else {
+                msgContainer.innerHTML += generateOtherTxtMsg(body.messages[0].body);
+            }
         });
 
         ;
@@ -115,7 +122,6 @@ buttonSend.addEventListener('click', () => {
 
 
     msgValue.value = '';
-    waitForPing();
 
 })
 
@@ -127,8 +133,7 @@ function setTimerPing() {
     //cron job
 
     console.log('this will execute for every 5 seconds')
-
-
+    waitForPing(); //pings to API, see if there's new update happening
 
     setTimeout(setTimerPing, 5000);
 }

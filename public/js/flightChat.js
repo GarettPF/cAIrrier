@@ -60,15 +60,26 @@ function waitForPing() {
             url: apiLink,
             method: 'GET',
             auth: {
-                'user': 'AC49e102719065ef4f9434960a7ab24ddb',
-                'pass': 'f3becea26411a3052e3f9394fb8b5428'
+
+
+                //USER & PASS IS VUNERABLE. SECURE IT.
+
+                'user': 'YEAH, NO',
+                'pass': 'BIG MISTAKE'
             },
             json: true
         }, function (error, response, body) {
             //generateOtherTxtMsg(body.messages[0])
             console.log(body.messages[0].body)
+            var temp = [ ];
+            temp.push(body.messages[0].body)
+            console.log(temp)
 
-            msgContainer.innerHTML += generateOtherTxtMsg(body.messages[0].body);
+            if (body.messages[0].body === temp[temp.length-1]) {
+                console.log('same message');
+            } else {
+                msgContainer.innerHTML += generateOtherTxtMsg(body.messages[0].body);
+            }
         });
 
         ;
