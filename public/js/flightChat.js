@@ -3,6 +3,8 @@ let buttonSend = document.querySelector('#buttonSend');
 let msgValue = document.querySelector('#msgValue');
 var request = require('request');
 let msgContainer = document.querySelector('#chatContainer');
+let actionPlan = document.querySelector('#actionPlanBtn');
+
 
 
 //var request = require('request');
@@ -141,5 +143,37 @@ function setTimerPing() {
 
     setTimeout(setTimerPing, 5000);
 }
+
+
+//suggested features
+
+//Action Plan Check Prediction TxT
+
+//generateActionPlan()
+
+
+function generateActionPlan() {
+    return null;
+}
+
+function setActionPlan(value) {
+    console.log('debrief'); 
+    //generateActionPrediction();\
+    let tempValue = 
+    `
+    diagnostic string precheck
+    Step 1. 
+    Step 2.
+    Step 3.
+    `
+
+
+    msgContainer.innerHTML += tempValue;
+
+}
+
+actionPlan.addEventListener('click', ()=> {
+    setActionPlan();
+})
 
 setTimerPing();

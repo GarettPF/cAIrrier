@@ -4,6 +4,8 @@ let buttonSend = document.querySelector('#buttonSend');
 let msgValue = document.querySelector('#msgValue');
 var request = require('request');
 let msgContainer = document.querySelector('#chatContainer');
+let actionPlan = document.querySelector('#actionPlanBtn');
+
 
 
 //var request = require('request');
@@ -61,8 +63,13 @@ function waitForPing() {
             url: apiLink,
             method: 'GET',
             auth: {
-                'user': 'AC49e102719065ef4f9434960a7ab24ddb',
-                'pass': 'f3becea26411a3052e3f9394fb8b5428'
+
+
+                //USER & PASS IS VUNERABLE. SECURE IT.
+                //create new identity. +2 step verificaiton. got hacked by canada fraud. sad, sad day.
+
+                'user': 'new verification',
+                'pass': 'update '
             },
             json: true
         }, function (error, response, body) {
@@ -97,12 +104,12 @@ function generateAPI(msg) {
         url: 'https://api.twilio.com/2010-04-01/Accounts/AC49e102719065ef4f9434960a7ab24ddb/Messages.json',
         method: 'POST',
         auth: {
-            'user': 'AC49e102719065ef4f9434960a7ab24ddb',
-            'pass': 'f3becea26411a3052e3f9394fb8b5428'
+            'user': 'sorry',
+            'pass': 'but 2 step verification needed'
         },
         form: {
-            To: '+18084857608',
-            From: '+18084259665',
+            To: '+###',
+            From: '+###',
             Body: msg
         }
     }
@@ -137,6 +144,39 @@ function setTimerPing() {
 
     setTimeout(setTimerPing, 5000);
 }
+
+
+//suggested features
+
+//Action Plan Check Prediction TxT
+
+//generateActionPlan()
+
+
+function generateActionPlan() {
+    return null;
+}
+
+function setActionPlan(value) {
+
+    console.log('debrief'); 
+    //generateActionPrediction();\
+    let tempValue = 
+    `
+    diagnostic string precheck
+    Step 1. 
+    Step 2.
+    Step 3.
+    `
+
+
+    msgContainer.innerHTML += tempValue;
+
+}
+
+actionPlan.addEventListener('click', ()=> {
+    setActionPlan();
+})
 
 setTimerPing();
 },{"request":114}],2:[function(require,module,exports){
