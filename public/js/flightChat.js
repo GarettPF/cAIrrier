@@ -4,6 +4,7 @@ let msgValue = document.querySelector('#msgValue');
 var request = require('request');
 let msgContainer = document.querySelector('#chatContainer');
 let actionPlan = document.querySelector('#actionPlanBtn');
+let dataANalysis = document.querySelector("#dataANalysis");
 
 
 
@@ -113,8 +114,6 @@ function waitForPing() {
 
 
 
-
-
 function generateAPI(msg) {
     return {
         url: 'https://api.twilio.com/2010-04-01/Accounts/AC49e102719065ef4f9434960a7ab24ddb/Messages.json',
@@ -194,3 +193,12 @@ actionPlan.addEventListener('click', ()=> {
 })
 
 setTimerPing();
+
+
+//generating chat autos
+funciton generateChat(strVal) {
+    dataANalysis.addEventListener('click', ()=> {
+        console.log('test');
+    }
+    return null;
+}
