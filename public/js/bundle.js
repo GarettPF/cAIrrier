@@ -158,7 +158,6 @@ function generateActionPlan() {
 }
 
 function setActionPlan(value) {
-
     console.log('debrief'); 
     //generateActionPrediction();\
     let tempValue = 
