@@ -202,3 +202,9 @@ funciton generateChat(strVal) {
     }
     return null;
 }
+
+//image analysis
+function imageANalysisML(image) {
+    //create a machine learning model. probably going to use firebase
+    onCreateML();
+}
