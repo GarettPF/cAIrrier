@@ -37,6 +37,23 @@ function generateOtherTxtMsg(value) {
 
 
 
+//another generated message
+
+function generateNewMessage(MLUpdate) {
+
+
+    var value = "this is a test";
+    let test = document.querySelector('#testbtn');
+
+    test.addEventListener("click:", ()=> {
+        console.log('this will be the machine learning output');
+    })
+    return test; //returns value of test. ML update
+
+}
+
+
+
 //this will auto send messages on platforms.
 
 
