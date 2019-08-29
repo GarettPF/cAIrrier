@@ -168,9 +168,6 @@ function setTimerPing() {
 //generateActionPlan()
 
 
-function generateActionPlan() {
-    return null;
-}
 
 function setActionPlan(value) {
     console.log('debrief'); 
@@ -182,9 +179,8 @@ function setActionPlan(value) {
     Step 2.
     Step 3.
     `
-
-
-    msgContainer.innerHTML += tempValue;
+    msgValue.innerHTML += tempValue;
+    console.log(msgValue.innerHTML);
 
 }
 
@@ -192,19 +188,7 @@ actionPlan.addEventListener('click', ()=> {
     setActionPlan();
 })
 
-setTimerPing();
+//setTimerPing();
 
 
-//generating chat autos
-funciton generateChat(strVal) {
-    dataANalysis.addEventListener('click', ()=> {
-        console.log('test');
-    }
-    return null;
-}
 
-//image analysis
-function imageANalysisML(image) {
-    //create a machine learning model. probably going to use firebase
-    onCreateML();
-}
