@@ -155,7 +155,7 @@ function setTimerPing() {
     //cron job
 
     console.log('this will execute for every 5 seconds')
-    waitForPing(); //pings to API, see if there's new update happening
+   //waitForPing(); //pings to API, see if there's new update happening
 
     setTimeout(setTimerPing, 5000);
 }
@@ -180,7 +180,8 @@ function setActionPlan(value) {
     Step 3.
     `
     msgValue.innerHTML += tempValue;
-    console.log(msgValue.innerHTML);
+    console.log("this goes here");
+
 
 }
 
